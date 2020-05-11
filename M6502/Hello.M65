@@ -1,0 +1,26 @@
+	.ORG_Min $8000
+	.ORG_MAX $803F
+; После формирования S37 файла область $0000-$7FFF удалить
+	.ORG $8000
+
+	SEI	;Set Interrupt disable
+                      
+	LDX #$FF
+	TXS
+
+	LDX	#0
+L01	LDA	L04,X
+	BEQ	L03
+L02	BBR5	$3C,L02 ;Cx9 serial status register
+	STA	$38	;Cx9 serial I/O buffers 
+	INX
+	BRA	L01
+L03	CLI	;Clear Int. disable
+
+	JMP ($FFFE)	;ВЫХОД
+
+L04	.DB $0D,$0A
+	.TEXT "Hello world!"
+	.DB $0D,$0A,$00
+
+	.END

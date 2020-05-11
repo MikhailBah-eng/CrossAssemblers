@@ -1,0 +1,4981 @@
+	TITLE === ƒËÁ‡ÒÒÂÏ·ÎËÓ‚‡ÌËÂ Ù‡ÈÎ‡ F:\Z80_Moe\SPEC48_0.$C ===
+	ORG	$0000
+	D1	;Û
+	XOR	A	;Ø
+	LD	DE,0FFFFH	;ˇˇ
+	JP	011CBH	;√À
+	LD	HL,(05C5DH)	;*]\
+	LD	(05C5FH),HL	;"_\
+	JR	00053H	;C
+	JP	015F2H	;√Ú
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	LD	HL,(05C5DH)	;*]\
+	LD	A,(HL)	;~
+	CALL	0007DH	;Õ}
+	RET	NC	;–
+	CALL	00074H	;Õt
+	JR	0001CH	;˜
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	JP	0335BH	;√[3
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	PUSH	BC	;≈
+	LD	HL,(05C61H)	;*a\
+	PUSH	HL	;Â
+	JP	0169EH	;√û
+	PUSH	AF	;ı
+	PUSH	HL	;Â
+	LD	HL,(05C78H)	;*x\
+	INC	HL	;#
+	LD	(05C78H),HL	;"x\
+	LD	A,H	;|
+	OR	L	;µ
+	JR	NZ,00048H	; 
+	INC	(IY+040H)	;˝4@
+	PUSH	BC	;≈
+	PUSH	DE	;’
+	CALL	002BFH	;Õø
+	POP	DE	;—
+	POP	BC	;¡
+	POP	HL	;·
+	POP	AF	;Ò
+	E1	;˚
+	RET	;…
+	POP	HL	;·
+	LD	L,(HL)	;n
+	LD	(IY+000H),L	;˝u
+	LD	SP,(05C3DH)	;Ì{=\
+	JP	016C5H	;√≈
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	RST	38H	;ˇ
+	PUSH	AF	;ı
+	PUSH	HL	;Â
+	LD	HL,(05CB0H)	;*∞\
+	LD	A,H	;|
+	OR	L	;µ
+	JR	NZ,00070H	; 
+	JP	(HL)	;È
+	POP	HL	;·
+	POP	AF	;Ò
+	RETN	;ÌE
+	LD	HL,(05C5DH)	;*]\
+	INC	HL	;#
+	LD	(05C5DH),HL	;"]\
+	LD	A,(HL)	;~
+	RET	;…
+	CP	021H	;˛!
+	RET	NC	;–
+	CP	00DH	;˛
+	RET	Z	;»
+	CP	010H	;˛
+	RET	C	;ÿ
+	CP	018H	;˛
+	CCF	;?
+	RET	C	;ÿ
+	INC	HL	;#
+	CP	016H	;˛
+	JR	C,00090H	;8
+	INC	HL	;#
+	SCF	;7
+	LD	(05C5DH),HL	;"]\
+	RET	;…
+	CP	A	;ø
+	LD	D,D	;R
+	LD	C,(HL)	;N
+	CALL	NZ,04E49H	;ƒIN
+	LD	C,E	;K
+	LD	B,L	;E
+	LD	E,C	;Y
+	AND	H	;§
+	LD	D,B	;P
+	RET	;…
+	LD	B,(HL)	;F
+	ADC	A,050H	;ŒP
+	LD	C,A	;O
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	CALL	NC,04353H	;‘SC
+	LD	D,D	;R
+	LD	B,L	;E
+	LD	B,L	;E
+	LD	C,(HL)	;N
+	AND	H	;§
+	LD	B,C	;A
+	LD	D,H	;T
+	LD	D,H	;T
+	JP	NC,0D441H	;“A‘
+	LD	D,H	;T
+	LD	B,C	;A
+	JP	NZ,04156H	;¬VA
+	LD	C,H	;L
+	AND	H	;§
+	LD	B,E	;C
+	LD	C,A	;O
+	LD	B,H	;D
+	PUSH	BC	;≈
+	LD	D,(HL)	;V
+	LD	B,C	;A
+	CALL	Z,0454CH	;ÃLE
+	ADC	A,053H	;ŒS
+	LD	C,C	;I
+	ADC	A,043H	;ŒC
+	LD	C,A	;O
+	OUT	(054H),A	;”T
+	LD	B,C	;A
+	ADC	A,041H	;ŒA
+	LD	D,E	;S
+	ADC	A,041H	;ŒA
+	LD	B,E	;C
+	OUT	(041H),A	;”A
+	LD	D,H	;T
+	ADC	A,04CH	;ŒL
+	ADC	A,045H	;ŒE
+	LD	E,B	;X
+	RET	NC	;–
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	CALL	NC,05153H	;‘SQ
+	JP	NC,04753H	;“SG
+	ADC	A,041H	;ŒA
+	LD	B,D	;B
+	OUT	(050H),A	;”P
+	LD	B,L	;E
+	LD	B,L	;E
+	BIT	1,C	;ÀI
+	ADC	A,055H	;ŒU
+	LD	D,E	;S
+	JP	NC,05453H	;“ST
+	LD	D,D	;R
+	AND	H	;§
+	LD	B,E	;C
+	LD	C,B	;H
+	LD	D,D	;R
+	AND	H	;§
+	LD	C,(HL)	;N
+	LD	C,A	;O
+	CALL	NC,04942H	;‘BI
+	ADC	A,04FH	;ŒO
+	JP	NC,04E41H	;“AN
+	CALL	NZ,0BD3CH	;ƒ<Ω
+	LD	A,0BDH	;>Ω
+	INC	A	;<
+	CP	(HL)	;æ
+	LD	C,H	;L
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	PUSH	BC	;≈
+	LD	D,H	;T
+	LD	C,B	;H
+	LD	B,L	;E
+	ADC	A,054H	;ŒT
+	RST	8	;œ
+	LD	D,E	;S
+	LD	D,H	;T
+	LD	B,L	;E
+	RET	NC	;–
+	LD	B,H	;D
+	LD	B,L	;E
+	LD	B,(HL)	;F
+	JR	NZ,00164H	; F
+	ADC	A,043H	;ŒC
+	LD	B,C	;A
+	CALL	NC,04F46H	;‘FO
+	LD	D,D	;R
+	LD	C,L	;M
+	LD	B,C	;A
+	CALL	NC,04F4DH	;‘MO
+	LD	D,(HL)	;V
+	PUSH	BC	;≈
+	LD	B,L	;E
+	LD	D,D	;R
+	LD	B,C	;A
+	LD	D,E	;S
+	PUSH	BC	;≈
+	LD	C,A	;O
+	LD	D,B	;P
+	LD	B,L	;E
+	LD	C,(HL)	;N
+	JR	NZ,000DAH	; £
+	LD	B,E	;C
+	LD	C,H	;L
+	LD	C,A	;O
+	LD	D,E	;S
+	LD	B,L	;E
+	JR	NZ,000E1H	; £
+	LD	C,L	;M
+	LD	B,L	;E
+	LD	D,D	;R
+	LD	B,A	;G
+	PUSH	BC	;≈
+	LD	D,(HL)	;V
+	LD	B,L	;E
+	LD	D,D	;R
+	LD	C,C	;I
+	LD	B,(HL)	;F
+	EXX	;Ÿ
+	LD	B,D	;B
+	LD	B,L	;E
+	LD	B,L	;E
+	RET	NC	;–
+	LD	B,E	;C
+	LD	C,C	;I
+	LD	D,D	;R
+	LD	B,E	;C
+	LD	C,H	;L
+	PUSH	BC	;≈
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	BIT	2,B	;ÀP
+	LD	B,C	;A
+	LD	D,B	;P
+	LD	B,L	;E
+	JP	NC,04C46H	;“FL
+	LD	B,C	;A
+	LD	D,E	;S
+	RET	Z	;»
+	LD	B,D	;B
+	LD	D,D	;R
+	LD	C,C	;I
+	LD	B,A	;G
+	LD	C,B	;H
+	CALL	NC,04E49H	;‘IN
+	LD	D,(HL)	;V
+	LD	B,L	;E
+	LD	D,D	;R
+	LD	D,E	;S
+	PUSH	BC	;≈
+	LD	C,A	;O
+	LD	D,(HL)	;V
+	LD	B,L	;E
+	JP	NC,0554FH	;“OU
+	CALL	NC,0504CH	;‘LP
+	LD	D,D	;R
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	CALL	NC,04C4CH	;‘LL
+	LD	C,C	;I
+	LD	D,E	;S
+	CALL	NC,05453H	;‘ST
+	LD	C,A	;O
+	RET	NC	;–
+	LD	D,D	;R
+	LD	B,L	;E
+	LD	B,C	;A
+	CALL	NZ,04144H	;ƒDA
+	LD	D,H	;T
+	POP	BC	;¡
+	LD	D,D	;R
+	LD	B,L	;E
+	LD	D,E	;S
+	LD	D,H	;T
+	LD	C,A	;O
+	LD	D,D	;R
+	PUSH	BC	;≈
+	LD	C,(HL)	;N
+	LD	B,L	;E
+	RST	10H	;◊
+	LD	B,D	;B
+	LD	C,A	;O
+	LD	D,D	;R
+	LD	B,H	;D
+	LD	B,L	;E
+	JP	NC,04F43H	;“CO
+	LD	C,(HL)	;N
+	LD	D,H	;T
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	LD	D,L	;U
+	PUSH	BC	;≈
+	LD	B,H	;D
+	LD	C,C	;I
+	CALL	04552H	;ÕRE
+	CALL	04F46H	;ÕFO
+	JP	NC,04F47H	;“GO
+	JR	NZ,00204H	; T
+	RST	8	;œ
+	LD	B,A	;G
+	LD	C,A	;O
+	JR	NZ,00208H	; S
+	LD	D,L	;U
+	JP	NZ,04E49H	;¬IN
+	LD	D,B	;P
+	LD	D,L	;U
+	CALL	NC,04F4CH	;‘LO
+	LD	B,C	;A
+	CALL	NZ,0494CH	;ƒLI
+	LD	D,E	;S
+	CALL	NC,0454CH	;‘LE
+	CALL	NC,04150H	;‘PA
+	LD	D,L	;U
+	LD	D,E	;S
+	PUSH	BC	;≈
+	LD	C,(HL)	;N
+	LD	B,L	;E
+	LD	E,B	;X
+	CALL	NC,04F50H	;‘PO
+	LD	C,E	;K
+	PUSH	BC	;≈
+	LD	D,B	;P
+	LD	D,D	;R
+	LD	C,C	;I
+	LD	C,(HL)	;N
+	CALL	NC,04C50H	;‘PL
+	LD	C,A	;O
+	CALL	NC,05552H	;‘RU
+	ADC	A,053H	;ŒS
+	LD	B,C	;A
+	LD	D,(HL)	;V
+	PUSH	BC	;≈
+	LD	D,D	;R
+	LD	B,C	;A
+	LD	C,(HL)	;N
+	LD	B,H	;D
+	LD	C,A	;O
+	LD	C,L	;M
+	LD	C,C	;I
+	LD	E,D	;Z
+	PUSH	BC	;≈
+	LD	C,C	;I
+	ADD	A,043H	;∆C
+	LD	C,H	;L
+	OUT	(044H),A	;”D
+	LD	D,D	;R
+	LD	B,C	;A
+	RST	10H	;◊
+	LD	B,E	;C
+	LD	C,H	;L
+	LD	B,L	;E
+	LD	B,C	;A
+	JP	NC,04552H	;“RE
+	LD	D,H	;T
+	LD	D,L	;U
+	LD	D,D	;R
+	ADC	A,043H	;ŒC
+	LD	C,A	;O
+	LD	D,B	;P
+	EXX	;Ÿ
+	LD	B,D	;B
+	LD	C,B	;H
+	LD	E,C	;Y
+	LD	(HL),035H	;65
+	LD	D,H	;T
+	LD	B,A	;G
+	LD	D,(HL)	;V
+	LD	C,(HL)	;N
+	LD	C,D	;J
+	LD	D,L	;U
+	SCF	;7
+	INC	(HL)	;4
+	LD	D,D	;R
+	LD	B,(HL)	;F
+	LD	B,E	;C
+	LD	C,L	;M
+	LD	C,E	;K
+	LD	C,C	;I
+	JR	C,0024DH	;83
+	LD	B,L	;E
+	LD	B,H	;D
+	LD	E,B	;X
+	LD	C,04CH	;L
+	LD	C,A	;O
+	ADD	HL,SP	;9
+	LD	(05357H),A	;2WS
+	LD	E,D	;Z
+	JR	NZ,00234H	; 
+	LD	D,B	;P
+	JR	NC,0025BH	;01
+	LD	D,C	;Q
+	LD	B,C	;A
+	EX	(SP),HL	;„
+	CALL	NZ,0E4E0H	;ƒ‡‰
+	OR	H	;¥
+	CP	H	;º
+	CP	L	;Ω
+	CP	E	;ª
+	XOR	A	;Ø
+	OR	B	;∞
+	OR	C	;±
+	RET	NZ	;¿
+	AND	A	;ß
+	AND	(HL)	;¶
+	CP	(HL)	;æ
+	XOR	L	;≠
+	OR	D	;≤
+	CP	D	;∫
+	PUSH	HL	;Â
+	AND	L	;•
+	JP	NZ,0B3E1H	;¬·≥
+	CP	C	;π
+	POP	BC	;¡
+	CP	B	;∏
+	LD	A,(HL)	;~
+	CALL	C,05CDAH	;‹⁄\
+	OR	A	;∑
+	LD	A,E	;{
+	LD	A,L	;}
+	RET	C	;ÿ
+	CP	A	;ø
+	XOR	(HL)	;Æ
+	XOR	D	;™
+	XOR	E	;´
+	DB	221	;›
+	SBC	A,0DFH	;ﬁﬂ
+	LD	A,A	;
+	OR	L	;µ
+	SUB	07CH	;÷|
+	PUSH	DE	;’
+	LD	E,L	;]
+	IN	A,(0B6H)	;€∂
+	EXX	;Ÿ
+	LD	E,E	;[
+	RST	10H	;◊
+	INC	C
+	RLCA
+	LD	B,004H
+	DEC	B
+	EX	AF,AF"
+	LD	A,(BC)
+	DEC	BC
+	ADD	HL,BC	;
+	RRCA	;
+	JP	PO,03F2AH	;‚*?
+	CALL	0CCC8H	;Õ»Ã
+	BIT	3,(HL)	;À^
+	XOR	H	;¨
+	DEC	L	;-
+	DEC	HL	;+
+	DEC	A	;=
+	LD	L,02CH	;.,
+	DEC	SP	;;
+	LD	(03CC7H),HL	;"«<
+	JP	0C53EH	;√>≈
+	CPL	;/
+	RET	;…
+	LD	H,B	;`
+	ADD	A,03AH	;∆:
+	RET	NC	;–
+	ADC	A,0A8H	;Œ®
+	JP	Z,0D4D3H	; ”‘
+	POP	DE	;—
+	JP	NC,0CFA9H	;“©œ
+	LD	L,02FH	;./
+	LD	DE,0FFFFH	;ˇˇ
+	LD	BC,0FEFEH	;˛˛
+	IN	A,(C)	;Ìx
+	CPL	;/
+	AND	01FH	;Ê
+	JR	Z,002ABH	;(
+	LD	H,A	;g
+	LD	A,L	;}
+	INC	D	;
+	RET	NZ	;¿
+	SUB	008H	;÷
+	SRL	H	;À<
+	JR	NC,002A1H	;0˙
+	LD	D,E	;S
+	LD	E,A	;_
+	JR	NZ,0029FH	; Ù
+	DEC	L	;-
+	RLC	B	;À
+	JR	C,00296H	;8Ê
+	LD	A,D	;z
+	INC	A	;<
+	RET	Z	;»
+	CP	028H	;˛(
+	RET	Z	;»
+	CP	019H	;˛
+	RET	Z	;»
+	LD	A,E	;{
+	LD	E,D	;Z
+	LD	D,A	;W
+	CP	018H	;˛
+	RET	;…
+	CALL	0028EH	;Õé
+	RET	NZ	;¿
+	LD	HL,05C00H	;!\
+	BIT	7,(HL)	;À~
+	JR	NZ,002D1H	; 
+	INC	HL	;#
+	DEC	(HL)	;5
+	DEC	HL	;+
+	JR	NZ,002D1H	; 
+	LD	(HL),0FFH	;6ˇ
+	LD	A,L	;}
+	LD	HL,05C04H	;!\
+	CP	L	;Ω
+	JR	NZ,002C6H	; Ó
+	CALL	0031EH	;Õ
+	RET	NC	;–
+	LD	HL,05C00H	;!\
+	CP	(HL)	;æ
+	JR	Z,00310H	;(.
+	EX	DE,HL	;Î
+	LD	HL,05C04H	;!\
+	CP	(HL)	;æ
+	JR	Z,00310H	;('
+	BIT	7,(HL)	;À~
+	JR	NZ,002F1H	; 
+	EX	DE,HL	;Î
+	BIT	7,(HL)	;À~
+	RET	Z	;»
+	LD	E,A	;_
+	LD	(HL),A	;w
+	INC	HL	;#
+	LD	(HL),005H	;6
+	INC	HL	;#
+	LD	A,(05C09H)	;:\
+	LD	(HL),A	;w
+	INC	HL	;#
+	LD	C,(IY+007H)	;˝N
+	LD	D,(IY+001H)	;˝V
+	PUSH	HL	;Â
+	CALL	00333H	;Õ3
+	POP	HL	;·
+	LD	(HL),A	;w
+	LD	(05C08H),A	;2\
+	DB	253	;˝
+	RLC	C	;À
+	XOR	0C9H	;Ó…
+	INC	HL	;#
+	LD	(HL),005H	;6
+	INC	HL	;#
+	DEC	(HL)	;5
+	RET	NZ	;¿
+	LD	A,(05C0AH)	;:\
+	LD	(HL),A	;w
+	INC	HL	;#
+	LD	A,(HL)	;~
+	JR	00308H	;Í
+	LD	B,D	;B
+	LD	D,000H	;
+	LD	A,E	;{
+	CP	027H	;˛'
+	RET	NC	;–
+	CP	018H	;˛
+	JR	NZ,0032CH	; 
+	BIT	7,B	;Àx
+	RET	NZ	;¿
+	LD	HL,00205H	;!
+	ADD	HL,DE	;
+	LD	A,(HL)	;~
+	SCF	;7
+	RET	;…
+	LD	A,E	;{
+	CP	03AH	;˛:
+	JR	C,00367H	;8/
+	DEC	C	;
+	JP	M,0034FH	;˙O
+	JR	Z,00341H	;(
+	ADD	A,04FH	;∆O
+	RET	;…
+	LD	HL,001EBH	;!Î
+	INC	B
+	JR	Z,0034AH	;(
+	LD	HL,00205H	;!
+	LD	D,000H
+	ADD	HL,DE	;
+	LD	A,(HL)	;~
+	RET	;…
+	LD	HL,00229H	;!)
+	BIT	0,B	;À@
+	JR	Z,0034AH	;(Ù
+	BIT	3,D	;ÀZ
+	JR	Z,00364H	;(
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,003BCH	;0^
+	RET	NZ	;¿
+	INC	B	;
+	RET	NZ	;¿
+	ADD	A,020H	;∆ 
+	RET	;…
+	ADD	A,0A5H	;∆•
+	RET	;…
+	CP	030H	;˛0
+	RET	C	;ÿ
+	DEC	C	;
+	JP	M,0039DH	;˙ù
+	JR	NZ,00389H	; 
+	LD	HL,00254H	;!T
+	BIT	5,B	;Àh
+	JR	Z,0034AH	;(”
+	CP	038H	;˛8
+	JR	NC,00382H	;0
+	SUB	020H	;÷ 
+	INC	B	;
+	RET	Z	;»
+	ADD	A,008H	;∆
+	RET	;…
+	SUB	036H	;÷6
+	INC	B	;
+	RET	Z	;»
+	ADD	A,0FEH	;∆˛
+	RET	;…
+	LD	HL,00230H	;!0
+	CP	039H	;˛9
+	JR	Z,0034AH	;(∫
+	CP	030H	;˛0
+	JR	Z,0034AH	;(∂
+	AND	007H	;Ê
+	ADD	A,080H	;∆Ä
+	INC	B	;
+	RET	Z	;»
+	XOR	00FH	;Ó
+	RET	;…
+	INC	B	;
+	RET	Z	;»
+	BIT	5,B	;Àh
+	LD	HL,00230H	;!0
+	JR	NZ,0034AH	; §
+	SUB	010H	;÷
+	CP	022H	;˛"
+	JR	Z,003B2H	;(
+	CP	020H	;˛ 
+	RET	NZ	;¿
+	LD	A,05FH	;>_
+	RET	;…
+	LD	A,040H	;>@
+	RET	;…
+	D1	;Û
+	LD	A,L	;}
+	SRL	L	;À=
+	SRL	L	;À=
+	CPL	;/
+	AND	003H	;Ê
+	LD	C,A	;O
+	LD	B,000H	;
+	LD	IX,003D1H	;›!—
+	ADD	IX,BC	;›
+	LD	A,(05C48H)	;:H\
+	AND	038H	;Ê8
+	RRCA
+	RRCA	;
+	RRCA
+	OR	008H	;ˆ
+	NOP
+	NOP
+	NOP
+	INC	B
+	INC	C	;
+	DEC	C	;
+	JR	NZ,003D6H	; ˝
+	LD	C,03FH	;?
+	DEC	B	;
+	JP	NZ,003D6H	;¬÷
+	XOR	010H	;Ó
+	OUT	(0FEH),A	;”˛
+	LD	B,H	;D
+	LD	C,A	;O
+	BIT	4,A	;Àg
+	JR	NZ,003F2H	; 
+	LD	A,D	;z
+	OR	E	;≥
+	JR	Z,003F6H	;(
+	LD	A,C	;y
+	LD	C,L	;M
+	DEC	DE	;
+	JP	(IX)	;›È
+	LD	C,L	;M
+	INC	C	;
+	JP	(IX)	;›È
+	E1	;˚
+	RET	;…
+	RST	28H	;Ô
+	LD	SP,0C027H	;1'¿
+	INC	BC	;
+	INC	(HL)	;4
+	CALL	PE,0986CH	;Ïlò
+	RRA
+	PUSH	AF	;ı
+	INC	B
+	AND	C	;°
+	RRCA	;
+	JR	C,00429H	;8!
+	SUB	D	;í
+	LD	E,H	;\
+	LD	A,(HL)	;~
+	AND	A	;ß
+	JR	NZ,0046CH	; ^
+	INC	HL	;#
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	LD	A,B	;x
+	RLA	;
+	SBC	A,A	;ü
+	CP	C	;π
+	JR	NZ,0046CH	; T
+	INC	HL	;#
+	CP	(HL)	;æ
+	JR	NZ,0046CH	; P
+	LD	A,B	;x
+	ADD	A,03CH	;∆<
+	JR	P,00446H	;Ú%
+	INC	B	;
+	JP	PO,0046CH	;‚l
+	LD	B,0FAH	;˙
+	INC	B
+	SUB	00CH	;÷
+	JR	NC,00427H	;0˚
+	ADD	A,00CH	;∆
+	PUSH	BC	;≈
+	LD	HL,0046EH	;!n
+	CALL	03406H	;Õ4
+	CALL	033B4H	;Õ¥3
+	RST	28H	;Ô
+	INC	B	;
+	JR	C,0042DH	;8Ò
+	ADD	A,(HL)	;Ü
+	LD	(HL),A	;w
+	RST	28H	;Ô
+	RET	NZ	;¿
+	LD	(BC),A	;
+	LD	SP,0CD38H	;18Õ
+	SUB	H	;î
+	LD	E,0FEH	;˛
+	DEC	BC	;
+	JR	NC,0046CH	;0"
+	RST	28H	;Ô
+	RET	P0	;‡
+	INC	B	;
+	RET	P0	;‡
+	INC	(HL)	;4
+	ADD	A,B	;Ä
+	LD	B,E	;C
+	LD	D,L	;U
+	SBC	A,A	;ü
+	ADD	A,B	;Ä
+	LD	BC,03405H	;4
+	DEC	(HL)	;5
+	LD	(HL),C	;q
+	INC	BC	;
+	JR	C,00429H	;8Õ
+	SBC	A,C	;ô
+	LD	E,0C5H	;≈
+	CALL	01E99H	;Õô
+	POP	HL	;·
+	LD	D,B	;P
+	LD	E,C	;Y
+	LD	A,D	;z
+	OR	E	;≥
+	RET	Z	;»
+	DEC	DE	;
+	JP	003B5H	;√µ
+	RST	8	;œ
+	LD	A,(BC)
+	ADC	A,C	;â
+	LD	(BC),A
+	RET	NC	;–
+	LD	(DE),A	;
+	ADD	A,(HL)	;Ü
+	ADC	A,C	;â
+	LD	A,(BC)	;
+	SUB	A	;ó
+	LD	H,B	;`
+	LD	(HL),L	;u
+	ADC	A,C	;â
+	LD	(DE),A
+	PUSH	DE	;’
+	RLA	;
+	RRA
+	ADC	A,C	;â
+	DEC	DE	;
+	SUB	B	;ê
+	LD	B,C	;A
+	LD	(BC),A	;
+	ADC	A,C	;â
+	INC	H	;$
+	RET	NC	;–
+	LD	D,E	;S
+	JP	Z,02E89H	; â.
+	SBC	A,L	;ù
+	LD	(HL),0B1H	;6±
+	ADC	A,C	;â
+	JR	C,0048EH	;8ˇ
+	LD	C,C	;I
+	LD	A,089H	;>â
+	LD	B,E	;C
+	RST	38H	;ˇ
+	LD	L,D	;j
+	LD	(HL),E	;s
+	ADC	A,C	;â
+	LD	C,A	;O
+	AND	A	;ß
+	NOP	;
+	LD	D,H	;T
+	ADC	A,C	;â
+	LD	E,H	;\
+	NOP
+	NOP	;
+	NOP	;
+	ADC	A,C	;â
+	LD	L,C	;i
+	INC	D	;
+	OR	024H	;ˆ$
+	ADC	A,C	;â
+	HALT	;v
+	POP	AF	;Ò
+	DJNZ	004AFH	;
+	CALL	024FBH	;Õ˚$
+	LD	A,(05C3BH)	;:;\
+	ADD	A,A	;á
+	JP	M,01C8AH	;˙ä
+	POP	HL	;·
+	RET	NC	;–
+	PUSH	HL	;Â
+	CALL	02BF1H	;ÕÒ+
+	LD	H,D	;b
+	LD	L,E	;k
+	DEC	C
+	RET	M	;¯
+	ADD	HL,BC	;
+	SET	7,(HL)	;À˛
+	RET	;…
+	LD	HL,0053FH	;!?
+	PUSH	HL	;Â
+	LD	HL,01F80H	;!Ä
+	BIT	7,A	;À
+	JR	Z,004D0H	;(
+	LD	HL,00C98H	;!ò
+	EX	AF,AF"	;
+	INC	DE	;
+	DEC	IX	;›+
+	D1	;Û
+	LD	A,002H	;>
+	LD	B,A	;G
+	DJNZ	004D8H	;˛
+	OUT	(0FEH),A	;”˛
+	XOR	00FH	;Ó
+	LD	B,0A4H	;§
+	DEC	L	;-
+	JR	NZ,004D8H	; ı
+	DEC	B	;
+	DEC	H	;%
+	JR	P,004BFH	;Úÿ
+	INC	B	;
+	LD	B,02FH	;/
+	DJNZ	004EAH	;˛
+	OUT	(0FEH),A	;”˛
+	LD	A,00DH	;>
+	LD	B,037H	;7
+	DJNZ	004F2H	;˛
+	OUT	(0FEH),A	;”˛
+	LD	BC,03B0EH	;;
+	EX	AF,AF"	;
+	LD	L,A	;o
+	JP	00507H	;√
+	LD	A,D	;z
+	OR	E	;≥
+	JR	Z,0050EH	;(
+	LD	L,(IX+000H)	;›n
+	LD	A,H	;|
+	XOR	L	;≠
+	LD	H,A	;g
+	LD	A,001H	;>
+	SCF	;7
+	JP	00525H	;√%
+	LD	L,H	;l
+	JR	00505H	;Ù
+	LD	A,C	;y
+	BIT	7,B	;Àx
+	DJNZ	00514H	;˛
+	JR	NC,0051CH	;0
+	LD	B,042H	;B
+	DJNZ	0051AH	;˛
+	OUT	(0FEH),A	;”˛
+	LD	B,03EH	;>
+	JR	NZ,00511H	; Ô
+	DEC	B	;
+	XOR	A	;Ø
+	INC	A	;<
+	RL	L	;À
+	JP	NZ,00514H	;¬
+	DEC	DE	;
+	INC	IX	;›#
+	LD	B,031H	;1
+	LD	A,07FH	;>
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	RET	NC	;–
+	LD	A,D	;z
+	INC	A	;<
+	JP	NZ,004FEH	;¬˛
+	LD	B,03BH	;;
+	DJNZ	0053CH	;˛
+	RET	;…
+	PUSH	AF	;ı
+	LD	A,(05C48H)	;:H\
+	AND	038H	;Ê8
+	RRCA
+	RRCA	;
+	RRCA	;
+	OUT	(0FEH),A	;”˛
+	LD	A,07FH	;>
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	E1	;˚
+	JR	C,00554H	;8
+	RST	8	;œ
+	INC	C	;
+	POP	AF	;Ò
+	RET	;…
+	INC	D
+	EX	AF,AF"	;
+	DEC	D	;
+	D1	;Û
+	LD	A,00FH	;>
+	OUT	(0FEH),A	;”˛
+	LD	HL,0053FH	;!?
+	PUSH	HL	;Â
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	AND	020H	;Ê 
+	OR	002H	;ˆ
+	LD	C,A	;O
+	CP	A	;ø
+	RET	NZ	;¿
+	CALL	005E7H	;ÕÁ
+	JR	NC,0056BH	;0˙
+	LD	HL,00415H	;!
+	DJNZ	00574H	;˛
+	DEC	HL	;+
+	LD	A,H	;|
+	OR	L	;µ
+	JR	NZ,00574H	; ˘
+	CALL	005E3H	;Õ„
+	JR	NC,0056BH	;0Î
+	LD	B,09CH	;ú
+	CALL	005E3H	;Õ„
+	JR	NC,0056BH	;0‰
+	LD	A,0C6H	;>∆
+	CP	B	;∏
+	JR	NC,0056CH	;0‡
+	INC	H	;$
+	JR	NZ,00580H	; Ò
+	LD	B,0C9H	;…
+	CALL	005E7H	;ÕÁ
+	JR	NC,0056BH	;0’
+	LD	A,B	;x
+	CP	0D4H	;˛‘
+	JR	NC,0058FH	;0Ù
+	CALL	005E7H	;ÕÁ
+	RET	NC	;–
+	LD	A,C	;y
+	XOR	003H	;Ó
+	LD	C,A	;O
+	LD	H,000H	;&
+	LD	B,0B0H	;∞
+	JR	005C8H
+	EX	AF,AF"
+	JR	NZ,005B3H	; 
+	JR	NC,005BDH	;0
+	LD	(IX+000H),L	;›u
+	JR	005C2H	;
+	RL	C	;À
+	XOR	L	;≠
+	RET	NZ	;¿
+	LD	A,C	;y
+	RRA
+	LD	C,A	;O
+	INC	DE
+	JR	005C4H	;
+	LD	A,(IX+000H)	;›~
+	XOR	L	;≠
+	RET	NZ	;¿
+	INC	IX	;›#
+	DEC	DE
+	EX	AF,AF"	;
+	LD	B,0B2H	;≤
+	LD	L,001H	;.
+	CALL	005E3H	;Õ„
+	RET	NC	;–
+	LD	A,0CBH	;>À
+	CP	B	;∏
+	RL	L	;À
+	LD	B,0B0H	;∞
+	JP	NC,005CAH	;“ 
+	LD	A,H	;|
+	XOR	L	;≠
+	LD	H,A	;g
+	LD	A,D	;z
+	OR	E	;≥
+	JR	NZ,005A9H	;  
+	LD	A,H	;|
+	CP	001H	;˛
+	RET	;…
+	CALL	005E7H	;ÕÁ
+	RET	NC	;–
+	LD	A,016H	;>
+	DEC	A	;=
+	JR	NZ,005E9H	; ˝
+	AND	A	;ß
+	INC	B	;
+	RET	Z	;»
+	LD	A,07FH	;>
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	RET	NC	;–
+	XOR	C	;©
+	AND	020H	;Ê 
+	JR	Z,005EDH	;(Û
+	LD	A,C	;y
+	CPL	;/
+	LD	C,A	;O
+	AND	007H	;Ê
+	OR	008H	;ˆ
+	OUT	(0FEH),A	;”˛
+	SCF	;7
+	RET	;…
+	POP	AF	;Ò
+	LD	A,(05C74H)	;:t\
+	SUB	0E0H	;÷‡
+	LD	(05C74H),A	;2t\
+	CALL	01C8CH	;Õå
+	CALL	02530H	;Õ0%
+	JR	Z,00652H	;(<
+	LD	BC,00011H	;
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JR	Z,00621H	;(
+	LD	C,022H	;"
+	RST	30H	;˜
+	PUSH	DE	;’
+	POP	IX	;›·
+	LD	B,00BH	;
+	LD	A,020H	;> 
+	LD	(DE),A
+	INC	DE	;
+	DJNZ	00629H	;¸
+	LD	(IX+001H),0FFH	;›6ˇ
+	CALL	02BF1H	;ÕÒ+
+	LD	HL,0FFF6H	;!ˆˇ
+	DEC	BC
+	ADD	HL,BC	;
+	INC	BC
+	JR	NC,0064BH	;0
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JR	NZ,00644H	; 
+	RST	8	;œ
+	LD	C,078H	;x
+	OR	C	;±
+	JR	Z,00652H	;(
+	LD	BC,0000AH	;
+	PUSH	IX	;›Â
+	POP	HL	;·
+	INC	HL	;#
+	EX	DE,HL	;Î
+	LDIR	;Ì∞
+	RST	18H	;ﬂ
+	CP	0E4H	;˛‰
+	JR	NZ,006A0H	; I
+	LD	A,(05C74H)	;:t\
+	CP	003H	;˛
+	JP	Z,01C8AH	; ä
+	RST	20H	;Á
+	CALL	028B2H	;Õ≤(
+	SET	7,C	;À˘
+	JR	NC,00672H	;0
+	LD	HL,00000H	;!
+	LD	A,(05C74H)	;:t\
+	DEC	A	;=
+	JR	Z,00685H	;(
+	RST	8	;œ
+	LD	BC,08AC2H	;¬ä
+	INC	E	;
+	CALL	02530H	;Õ0%
+	JR	Z,00692H	;(
+	INC	HL	;#
+	LD	A,(HL)	;~
+	LD	(IX+00BH),A	;›w
+	INC	HL	;#
+	LD	A,(HL)	;~
+	LD	(IX+00CH),A	;›w
+	INC	HL	;#
+	LD	(IX+00EH),C	;›q
+	LD	A,001H	;>
+	BIT	6,C	;Àq
+	JR	Z,0068FH	;(
+	INC	A	;<
+	LD	(IX+000H),A	;›w
+	EX	DE,HL	;Î
+	RST	20H	;Á
+	CP	029H	;˛)
+	JR	NZ,00672H	; ⁄
+	RST	20H	;Á
+	CALL	01BEEH	;ÕÓ
+	EX	DE,HL	;Î
+	JP	0075AH	;√Z
+	CP	0AAH	;˛™
+	JR	NZ,006C3H	; 
+	LD	A,(05C74H)	;:t\
+	CP	003H	;˛
+	JP	Z,01C8AH	; ä
+	RST	20H	;Á
+	CALL	01BEEH	;ÕÓ
+	LD	(IX+00BH),000H	;›6
+	LD	(IX+00CH),01BH	;›6
+	LD	HL,04000H	;!@
+	LD	(IX+00DH),L	;›u
+	LD	(IX+00EH),H	;›t
+	JR	00710H	;M
+	CP	0AFH	;˛Ø
+	JR	NZ,00716H	; O
+	LD	A,(05C74H)	;:t\
+	CP	003H	;˛
+	JP	Z,01C8AH	; ä
+	RST	20H	;Á
+	CALL	02048H	;ÕH 
+	JR	NZ,006E1H	; 
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JP	Z,01C8AH	; ä
+	CALL	01CE6H	;ÕÊ
+	JR	006F0H	;
+	CALL	01C82H	;ÕÇ
+	RST	18H	;ﬂ
+	CP	02CH	;˛,
+	JR	Z,006F5H	;(
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JP	Z,01C8AH	; ä
+	CALL	01CE6H	;ÕÊ
+	JR	006F9H	;
+	RST	20H	;Á
+	CALL	01C82H	;ÕÇ
+	CALL	01BEEH	;ÕÓ
+	CALL	01E99H	;Õô
+	LD	(IX+00BH),C	;›q
+	LD	(IX+00CH),B	;›p
+	CALL	01E99H	;Õô
+	LD	(IX+00DH),C	;›q
+	LD	(IX+00EH),B	;›p
+	LD	H,B	;`
+	LD	L,C	;i
+	LD	(IX+000H),003H	;›6
+	JR	0075AH	;D
+	CP	0CAH	;˛ 
+	JR	Z,00723H	;(
+	CALL	01BEEH	;ÕÓ
+	LD	(IX+00EH),080H	;›6Ä
+	JR	0073AH	;
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JP	NZ,01C8AH	;¬ä
+	RST	20H	;Á
+	CALL	01C82H	;ÕÇ
+	CALL	01BEEH	;ÕÓ
+	CALL	01E99H	;Õô
+	LD	(IX+00DH),C	;›q
+	LD	(IX+00EH),B	;›p
+	LD	(IX+000H),000H	;›6
+	LD	HL,(05C59H)	;*Y\
+	LD	DE,(05C53H)	;Ì[S\
+	SCF	;7
+	SBC	HL,DE	;ÌR
+	LD	(IX+00BH),L	;›u
+	LD	(IX+00CH),H	;›t
+	LD	HL,(05C4BH)	;*K\
+	SBC	HL,DE	;ÌR
+	LD	(IX+00FH),L	;›u
+	LD	(IX+010H),H	;›t
+	EX	DE,HL	;Î
+	LD	A,(05C74H)	;:t\
+	AND	A	;ß
+	JP	Z,00970H	; p
+	PUSH	HL	;Â
+	LD	BC,00011H	;
+	ADD	IX,BC	;›
+	PUSH	IX	;›Â
+	LD	DE,00011H	;
+	XOR	A	;Ø
+	SCF	;7
+	CALL	00556H	;ÕV
+	POP	IX	;›·
+	JR	NC,00767H	;0Ú
+	LD	A,0FEH	;>˛
+	CALL	01601H	;Õ
+	LD	(IY+052H),003H	;˝6R
+	LD	C,080H	;Ä
+	LD	A,(IX+000H)	;›~
+	CP	(IX+0EFH)	;›æÔ
+	JR	NZ,0078AH	; 
+	LD	C,0F6H	;ˆ
+	CP	004H	;˛
+	JR	NC,00767H	;0Ÿ
+	LD	DE,009C0H	;¿
+	PUSH	BC	;≈
+	CALL	00C0AH	;Õ
+	POP	BC	;¡
+	PUSH	IX	;›Â
+	POP	DE	;—
+	LD	HL,0FFF0H	;!ˇ
+	ADD	HL,DE
+	LD	B,00AH	;
+	LD	A,(HL)	;~
+	INC	A	;<
+	JR	NZ,007A6H	; 
+	LD	A,C	;y
+	ADD	A,B	;Ä
+	LD	C,A	;O
+	INC	DE	;
+	LD	A,(DE)	;
+	CP	(HL)	;æ
+	INC	HL	;#
+	JR	NZ,007ADH	; 
+	INC	C
+	RST	10H	;◊
+	DJNZ	007A6H	;ˆ
+	BIT	7,C	;Ày
+	JR	NZ,00767H	; ≥
+	LD	A,00DH	;>
+	RST	10H	;◊
+	POP	HL	;·
+	LD	A,(IX+000H)	;›~
+	CP	003H	;˛
+	JR	Z,007CBH	;(
+	LD	A,(05C74H)	;:t\
+	DEC	A	;=
+	JP	Z,00808H	; 
+	CP	002H	;˛
+	JP	Z,008B6H	; ∂
+	PUSH	HL	;Â
+	LD	L,(IX+0FAH)	;›n˙
+	LD	H,(IX+0FBH)	;›f˚
+	LD	E,(IX+00BH)	;›^
+	LD	D,(IX+00CH)	;›V
+	LD	A,H	;|
+	OR	L	;µ
+	JR	Z,007E9H	;(
+	SBC	HL,DE	;ÌR
+	JR	C,00806H	;8&
+	JR	Z,007E9H	;(
+	LD	A,(IX+000H)	;›~
+	CP	003H	;˛
+	JR	NZ,00806H	; 
+	POP	HL	;·
+	LD	A,H	;|
+	OR	L	;µ
+	JR	NZ,007F4H	; 
+	LD	L,(IX+00DH)	;›n
+	LD	H,(IX+00EH)	;›f
+	PUSH	HL	;Â
+	POP	IX	;›·
+	LD	A,(05C74H)	;:t\
+	CP	002H	;˛
+	SCF	;7
+	JR	NZ,00800H	; 
+	AND	A	;ß
+	LD	A,0FFH	;>ˇ
+	CALL	00556H	;ÕV
+	RET	C	;ÿ
+	RST	8	;œ
+	LD	A,(DE)	;
+	LD	E,(IX+00BH)	;›^
+	LD	D,(IX+00CH)	;›V
+	PUSH	HL	;Â
+	LD	A,H	;|
+	OR	L	;µ
+	JR	NZ,00819H	; 
+	INC	DE
+	INC	DE	;
+	INC	DE
+	EX	DE,HL	;Î
+	JR	00825H	;
+	LD	L,(IX+0FAH)	;›n˙
+	LD	H,(IX+0FBH)	;›f˚
+	EX	DE,HL	;Î
+	SCF	;7
+	SBC	HL,DE	;ÌR
+	JR	C,0082EH	;8
+	LD	DE,00005H	;
+	ADD	HL,DE	;
+	LD	B,H	;D
+	LD	C,L	;M
+	CALL	01F05H	;Õ
+	POP	HL	;·
+	LD	A,(IX+000H)	;›~
+	AND	A	;ß
+	JR	Z,00873H	;(>
+	LD	A,H	;|
+	OR	L	;µ
+	JR	Z,0084CH	;(
+	DEC	HL	;+
+	LD	B,(HL)	;F
+	DEC	HL	;+
+	LD	C,(HL)	;N
+	DEC	HL	;+
+	INC	BC
+	INC	BC	;
+	INC	BC	;
+	LD	(05C5FH),IX	;›"_\
+	CALL	019E8H	;ÕË
+	LD	IX,(05C5FH)	;›*_\
+	LD	HL,(05C59H)	;*Y\
+	DEC	HL	;+
+	LD	C,(IX+00BH)	;›N
+	LD	B,(IX+00CH)	;›F
+	PUSH	BC	;≈
+	INC	BC
+	INC	BC	;
+	INC	BC	;
+	LD	A,(IX+0FDH)	;›~˝
+	PUSH	AF	;ı
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	POP	AF	;Ò
+	LD	(HL),A	;w
+	POP	DE	;—
+	INC	HL	;#
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	INC	HL	;#
+	PUSH	HL	;Â
+	POP	IX	;›·
+	SCF	;7
+	LD	A,0FFH	;>ˇ
+	JP	00802H	;√
+	EX	DE,HL	;Î
+	LD	HL,(05C59H)	;*Y\
+	DEC	HL	;+
+	LD	(05C5FH),IX	;›"_\
+	LD	C,(IX+00BH)	;›N
+	LD	B,(IX+00CH)	;›F
+	PUSH	BC	;≈
+	CALL	019E5H	;ÕÂ
+	POP	BC	;¡
+	PUSH	HL	;Â
+	PUSH	BC	;≈
+	CALL	01655H	;ÕU
+	LD	IX,(05C5FH)	;›*_\
+	INC	HL	;#
+	LD	C,(IX+00FH)	;›N
+	LD	B,(IX+010H)	;›F
+	ADD	HL,BC	;
+	LD	(05C4BH),HL	;"K\
+	LD	H,(IX+00EH)	;›f
+	LD	A,H	;|
+	AND	0C0H	;Ê¿
+	JR	NZ,008ADH	; 
+	LD	L,(IX+00DH)	;›n
+	LD	(05C42H),HL	;"B\
+	LD	(IY+00AH),000H	;˝6
+	POP	DE	;—
+	POP	IX	;›·
+	SCF	;7
+	LD	A,0FFH	;>ˇ
+	JP	00802H	;√
+	LD	C,(IX+00BH)	;›N
+	LD	B,(IX+00CH)	;›F
+	PUSH	BC	;≈
+	INC	BC	;
+	RST	30H	;˜
+	LD	(HL),080H	;6Ä
+	EX	DE,HL	;Î
+	POP	DE	;—
+	PUSH	HL	;Â
+	PUSH	HL	;Â
+	POP	IX	;›·
+	SCF	;7
+	LD	A,0FFH	;>ˇ
+	CALL	00802H	;Õ
+	POP	HL	;·
+	LD	DE,(05C53H)	;Ì[S\
+	LD	A,(HL)	;~
+	AND	0C0H	;Ê¿
+	JR	NZ,008F0H	; 
+	LD	A,(DE)	;
+	INC	DE	;
+	CP	(HL)	;æ
+	INC	HL	;#
+	JR	NZ,008DFH	; 
+	LD	A,(DE)
+	CP	(HL)	;æ
+	DEC	DE	;
+	DEC	HL	;+
+	JR	NC,008EBH	;0
+	PUSH	HL	;Â
+	EX	DE,HL	;Î
+	CALL	019B8H	;Õ∏
+	POP	HL	;·
+	JR	008D7H	;Ï
+	CALL	0092CH	;Õ,
+	JR	008D2H	;‚
+	LD	A,(HL)	;~
+	LD	C,A	;O
+	CP	080H	;˛Ä
+	RET	Z	;»
+	PUSH	HL	;Â
+	LD	HL,(05C4BH)	;*K\
+	LD	A,(HL)	;~
+	CP	080H	;˛Ä
+	JR	Z,00923H	;(%
+	CP	C	;π
+	JR	Z,00909H	;(
+	PUSH	BC	;≈
+	CALL	019B8H	;Õ∏
+	POP	BC	;¡
+	EX	DE,HL	;Î
+	JR	008F9H	;
+	AND	0E0H	;Ê‡
+	CP	0A0H	;˛†
+	JR	NZ,00921H	; 
+	POP	DE	;—
+	PUSH	DE	;’
+	PUSH	HL	;Â
+	INC	HL	;#
+	INC	DE	;
+	LD	A,(DE)	;
+	CP	(HL)	;æ
+	JR	NZ,0091EH	; 
+	RLA	;
+	JR	NC,00912H	;0˜
+	POP	HL	;·
+	JR	00921H	;
+	POP	HL	;·
+	JR	00901H	;‡
+	LD	A,0FFH	;>ˇ
+	POP	DE	;—
+	EX	DE,HL	;Î
+	INC	A	;<
+	SCF	;7
+	CALL	0092CH	;Õ,
+	JR	008F0H	;ƒ
+	JR	NZ,0093EH	; 
+	EX	AF,AF"	;
+	LD	(05C5FH),HL	;"_\
+	EX	DE,HL	;Î
+	CALL	019B8H	;Õ∏
+	CALL	019E8H	;ÕË
+	EX	DE,HL	;Î
+	LD	HL,(05C5FH)	;*_\
+	EX	AF,AF"	;
+	EX	AF,AF"	;
+	PUSH	DE	;’
+	CALL	019B8H	;Õ∏
+	LD	(05C5FH),HL	;"_\
+	LD	HL,(05C53H)	;*S\
+	EX	(SP),HL	;„
+	PUSH	BC	;≈
+	EX	AF,AF"
+	JR	C,00955H	;8
+	DEC	HL	;+
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	JR	00958H	;
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	POP	BC	;¡
+	POP	DE	;—
+	LD	(05C53H),DE	;ÌSS\
+	LD	DE,(05C5FH)	;Ì[_\
+	PUSH	BC	;≈
+	PUSH	DE	;’
+	EX	DE,HL	;Î
+	LDIR	;Ì∞
+	POP	HL	;·
+	POP	BC	;¡
+	PUSH	DE	;’
+	CALL	019E8H	;ÕË
+	POP	DE	;—
+	RET	;…
+	PUSH	HL	;Â
+	LD	A,0FDH	;>˝
+	CALL	01601H	;Õ
+	XOR	A	;Ø
+	LD	DE,009A1H	;°
+	CALL	00C0AH	;Õ
+	DB	253	;˝
+	RLC	D	;À
+	XOR	0CDH	;ÓÕ
+	CALL	NC,0DD15H	;‘›
+	PUSH	HL	;Â
+	LD	DE,00011H	;
+	XOR	A	;Ø
+	CALL	004C2H	;Õ¬
+	POP	IX	;›·
+	LD	B,032H	;2
+	HALT	;v
+	DJNZ	00991H	;˝
+	LD	E,(IX+00BH)	;›^
+	LD	D,(IX+00CH)	;›V
+	LD	A,0FFH	;>ˇ
+	POP	IX	;›·
+	JP	004C2H	;√¬
+	ADD	A,B	;Ä
+	LD	D,E	;S
+	LD	(HL),H	;t
+	LD	H,C	;a
+	LD	(HL),D	;r
+	LD	(HL),H	;t
+	JR	NZ,00A1DH	; t
+	LD	H,C	;a
+	LD	(HL),B	;p
+	LD	H,L	;e
+	INC	L	;,
+	JR	NZ,00A23H	; t
+	LD	L,B	;h
+	LD	H,L	;e
+	LD	L,(HL)	;n
+	JR	NZ,00A24H	; p
+	LD	(HL),D	;r
+	LD	H,L	;e
+	LD	(HL),E	;s
+	LD	(HL),E	;s
+	JR	NZ,00A1BH	; a
+	LD	L,(HL)	;n
+	LD	A,C	;y
+	JR	NZ,00A29H	; k
+	LD	H,L	;e
+	LD	A,C	;y
+	XOR	(HL)	;Æ
+	DEC	C	;
+	LD	D,B	;P
+	LD	(HL),D	;r
+	LD	L,A	;o
+	LD	H,A	;g
+	LD	(HL),D	;r
+	LD	H,C	;a
+	LD	L,L	;m
+	LD	A,(00DA0H)	;:†
+	LD	C,(HL)	;N
+	LD	(HL),L	;u
+	LD	L,L	;m
+	LD	H,D	;b
+	LD	H,L	;e
+	LD	(HL),D	;r
+	JR	NZ,00A35H	; a
+	LD	(HL),D	;r
+	LD	(HL),D	;r
+	LD	H,C	;a
+	LD	A,C	;y
+	LD	A,(00DA0H)	;:†
+	LD	B,E	;C
+	LD	L,B	;h
+	LD	H,C	;a
+	LD	(HL),D	;r
+	LD	H,C	;a
+	LD	H,E	;c
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	(HL),D	;r
+	JR	NZ,00A47H	; a
+	LD	(HL),D	;r
+	LD	(HL),D	;r
+	LD	H,C	;a
+	LD	A,C	;y
+	LD	A,(00DA0H)	;:†
+	LD	B,D	;B
+	LD	A,C	;y
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	(HL),E	;s
+	LD	A,(0CDA0H)	;:†Õ
+	INC	BC	;
+	DEC	BC	;
+	CP	020H	;˛ 
+	JP	NC,00AD9H	;“Ÿ
+	CP	006H	;˛
+	JR	C,00A69H	;8i
+	CP	018H	;˛
+	JR	NC,00A69H	;0e
+	LD	HL,00A0BH	;!
+	LD	E,A	;_
+	LD	D,000H
+	ADD	HL,DE
+	LD	E,(HL)	;^
+	ADD	HL,DE	;
+	PUSH	HL	;Â
+	JP	00B03H	;√
+	LD	C,(HL)	;N
+	LD	D,A	;W
+	DJNZ	00A3EH	;)
+	LD	D,H	;T
+	LD	D,E	;S
+	LD	D,D	;R
+	SCF	;7
+	LD	D,B	;P
+	LD	C,A	;O
+	LD	E,A	;_
+	LD	E,(HL)	;^
+	LD	E,L	;]
+	LD	E,H	;\
+	LD	E,E	;[
+	LD	E,D	;Z
+	LD	D,H	;T
+	LD	D,E	;S
+	INC	C	;
+	LD	A,022H	;>"
+	CP	C	;π
+	JR	NZ,00A3AH	; 
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	NZ,00A38H	; 
+	INC	B
+	LD	C,002H	;
+	LD	A,018H	;>
+	CP	B	;∏
+	JR	NZ,00A3AH	; 
+	DEC	B	;
+	LD	C,021H	;!
+	JP	00DD9H	;√Ÿ
+	LD	A,(05C91H)	;:ë\
+	PUSH	AF	;ı
+	LD	(IY+057H),001H	;˝6W
+	LD	A,020H	;> 
+	CALL	00B65H	;Õe
+	POP	AF	;Ò
+	LD	(05C91H),A	;2ë\
+	RET	;…
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JP	NZ,00ECDH	;¬Õ
+	LD	C,021H	;!
+	CALL	00C55H	;ÕU
+	DEC	B	;
+	JP	00DD9H	;√Ÿ
+	CALL	00B03H	;Õ
+	LD	A,C	;y
+	DEC	A	;=
+	DEC	A	;=
+	AND	010H	;Ê
+	JR	00AC3H	;Z
+	LD	A,03FH	;>?
+	JR	00AD9H	;l
+	LD	DE,00A87H	;á
+	LD	(05C0FH),A	;2\
+	JR	00A80H
+	LD	DE,00A6DH	;m
+	JR	00A7DH
+	LD	DE,00A87H	;á
+	LD	(05C0EH),A	;2\
+	LD	HL,(05C51H)	;*Q\
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	RET	;…
+	LD	DE,009F4H	;Ù
+	CALL	00A80H	;ÕÄ
+	LD	HL,(05C0EH)	;*\
+	LD	D,A	;W
+	LD	A,L	;}
+	CP	016H	;˛
+	JP	C,02211H	;⁄"
+	JR	NZ,00AC2H	; )
+	LD	B,H	;D
+	LD	C,D	;J
+	LD	A,01FH	;>
+	SUB	C	;ë
+	JR	C,00AACH	;8
+	ADD	A,002H	;∆
+	LD	C,A	;O
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	NZ,00ABFH	; 
+	LD	A,016H	;>
+	SUB	B	;ê
+	JP	C,01E9FH	;⁄ü
+	INC	A	;<
+	LD	B,A	;G
+	INC	B	;
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JP	NZ,00C55H	;¬U
+	CP	(IY+031H)	;˝æ1
+	JP	C,00C86H	;⁄Ü
+	JP	00DD9H	;√Ÿ
+	LD	A,H	;|
+	CALL	00B03H	;Õ
+	ADD	A,C	;Å
+	DEC	A	;=
+	AND	01FH	;Ê
+	RET	Z	;»
+	LD	D,A	;W
+	DB	253	;˝
+	RLC	C	;À
+	ADD	A,03EH	;∆>
+	JR	NZ,00AA0H	; Õ
+	DEC	SP	;;
+	INC	C	;
+	DEC	D	;
+	JR	NZ,00AD0H	; ¯
+	RET	;…
+	CALL	00B24H	;Õ$
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	NZ,00AFCH	; 
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JR	NZ,00AF0H	; 
+	LD	(05C88H),BC	;ÌCà\
+	LD	(05C84H),HL	;"Ñ\
+	RET	;…
+	LD	(05C8AH),BC	;ÌCä\
+	LD	(05C82H),BC	;ÌCÇ\
+	LD	(05C86H),HL	;"Ü\
+	RET	;…
+	LD	(IY+045H),C	;˝qE
+	LD	(05C80H),HL	;"Ä\
+	RET	;…
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	NZ,00B1DH	; 
+	LD	BC,(05C88H)	;ÌKà\
+	LD	HL,(05C84H)	;*Ñ\
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	RET	Z	;»
+	LD	BC,(05C8AH)	;ÌKä\
+	LD	HL,(05C86H)	;*Ü\
+	RET	;…
+	LD	C,(IY+045H)	;˝NE
+	LD	HL,(05C80H)	;*Ä\
+	RET	;…
+	CP	080H	;˛Ä
+	JR	C,00B65H	;8=
+	CP	090H	;˛ê
+	JR	NC,00B52H	;0&
+	LD	B,A	;G
+	CALL	00B38H	;Õ8
+	CALL	00B03H	;Õ
+	LD	DE,05C92H	;í\
+	JR	00B7FH	;G
+	LD	HL,05C92H	;!í\
+	CALL	00B3EH	;Õ>
+	RR	B	;À
+	SBC	A,A	;ü
+	AND	00FH	;Ê
+	LD	C,A	;O
+	RR	B	;À
+	SBC	A,A	;ü
+	AND	0F0H	;Ê
+	OR	C	;±
+	LD	C,004H	;
+	LD	(HL),A	;w
+	INC	HL	;#
+	DEC	C	;
+	JR	NZ,00B4CH	; ˚
+	RET	;…
+	SUB	0A5H	;÷•
+	JR	NC,00B5FH	;0
+	ADD	A,015H	;∆
+	PUSH	BC	;≈
+	LD	BC,(05C7BH)	;ÌK{\
+	JR	00B6AH	;
+	CALL	00C10H	;Õ
+	JP	00B03H	;√
+	PUSH	BC	;≈
+	LD	BC,(05C36H)	;ÌK6\
+	EX	DE,HL	;Î
+	LD	HL,05C3BH	;!;\
+	RES	0,(HL)	;ÀÜ
+	CP	020H	;˛ 
+	JR	NZ,00B76H	; 
+	SET	0,(HL)	;À∆
+	LD	H,000H	;&
+	LD	L,A	;o
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	ADD	HL,BC	;
+	POP	BC	;¡
+	EX	DE,HL	;Î
+	LD	A,C	;y
+	DEC	A	;=
+	LD	A,021H	;>!
+	JR	NZ,00B93H	; 
+	DEC	B	;
+	LD	C,A	;O
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	Z,00B93H	;(
+	PUSH	DE	;’
+	CALL	00ECDH	;ÕÕ
+	POP	DE	;—
+	LD	A,C	;y
+	CP	C	;π
+	PUSH	DE	;’
+	CALL	Z,00C55H	;ÃU
+	POP	DE	;—
+	PUSH	BC	;≈
+	PUSH	HL	;Â
+	LD	A,(05C91H)	;:ë\
+	LD	B,0FFH	;ˇ
+	RRA
+	JR	C,00BA4H	;8
+	INC	B
+	RRA	;
+	RRA	;
+	SBC	A,A	;ü
+	LD	C,A	;O
+	LD	A,008H	;>
+	AND	A	;ß
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	Z,00BB6H	;(
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,00B83H	;0Œ
+	SCF	;7
+	EX	DE,HL	;Î
+	EX	AF,AF"	;
+	LD	A,(DE)	;
+	AND	B	;†
+	XOR	(HL)	;Æ
+	XOR	C	;©
+	LD	(DE),A	;
+	EX	AF,AF"
+	JR	C,00BD3H	;8
+	INC	D	;
+	INC	HL	;#
+	DEC	A	;=
+	JR	NZ,00BB7H	; Ú
+	EX	DE,HL	;Î
+	DEC	H	;%
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	CALL	Z,00BDBH	;Ã€
+	POP	HL	;·
+	POP	BC	;¡
+	DEC	C	;
+	INC	HL	;#
+	RET	;…
+	EX	AF,AF"	;
+	LD	A,020H	;> 
+	ADD	A,E	;É
+	LD	E,A	;_
+	EX	AF,AF"	;
+	JR	00BC1H	;Ê
+	LD	A,H	;|
+	RRCA
+	RRCA	;
+	RRCA
+	AND	003H	;Ê
+	OR	058H	;ˆX
+	LD	H,A	;g
+	LD	DE,(05C8FH)	;Ì[è\
+	LD	A,(HL)	;~
+	XOR	E	;´
+	AND	D	;¢
+	XOR	E	;´
+	DB	253	;˝
+	BIT	2,A	;ÀW
+	HALT	;v
+	JR	Z,00BFAH	;(
+	AND	0C7H	;Ê«
+	BIT	2,A	;ÀW
+	JR	NZ,00BFAH	; 
+	XOR	038H	;Ó8
+	DB	253	;˝
+	BIT	2,A	;ÀW
+	LD	H,(HL)	;f
+	JR	Z,00C08H	;(
+	AND	0F8H	;Ê¯
+	BIT	5,A	;Ào
+	JR	NZ,00C08H	; 
+	XOR	007H	;Ó
+	LD	(HL),A	;w
+	RET	;…
+	PUSH	HL	;Â
+	LD	H,000H	;&
+	EX	(SP),HL	;„
+	JR	00C14H
+	LD	DE,00095H	;ï
+	PUSH	AF	;ı
+	CALL	00C41H	;ÕA
+	JR	C,00C22H	;8
+	LD	A,020H	;> 
+	DB	253	;˝
+	RLC	C	;À
+	LD	B,(HL)	;F
+	CALL	Z,00C3BH	;Ã;
+	LD	A,(DE)	;
+	AND	07FH	;Ê
+	CALL	00C3BH	;Õ;
+	LD	A,(DE)	;
+	INC	DE	;
+	ADD	A,A	;á
+	JR	NC,00C22H	;0ı
+	POP	DE	;—
+	CP	048H	;˛H
+	JR	Z,00C35H	;(
+	CP	082H	;˛Ç
+	RET	C	;ÿ
+	LD	A,D	;z
+	CP	003H	;˛
+	RET	C	;ÿ
+	LD	A,020H	;> 
+	PUSH	DE	;’
+	EXX	;Ÿ
+	RST	10H	;◊
+	EXX	;Ÿ
+	POP	DE	;—
+	RET	;…
+	PUSH	AF	;ı
+	EX	DE,HL	;Î
+	INC	A	;<
+	BIT	7,(HL)	;À~
+	INC	HL	;#
+	JR	Z,00C44H	;(˚
+	DEC	A	;=
+	JR	NZ,00C44H	; ¯
+	EX	DE,HL	;Î
+	POP	AF	;Ò
+	CP	020H	;˛ 
+	RET	C	;ÿ
+	LD	A,(DE)	;
+	SUB	041H	;÷A
+	RET	;…
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	RET	NZ	;¿
+	LD	DE,00DD9H	;Ÿ
+	PUSH	DE	;’
+	LD	A,B	;x
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JP	NZ,00D02H	;¬
+	CP	(IY+031H)	;˝æ1
+	JR	C,00C86H	;8
+	RET	NZ	;¿
+	DB	253	;˝
+	RLC	D	;À
+	LD	H,(HL)	;f
+	JR	Z,00C88H	;(
+	LD	E,(IY+02DH)	;˝^-
+	DEC	E	;
+	JR	Z,00CD2H	;(Z
+	LD	A,000H	;>
+	CALL	01601H	;Õ
+	LD	SP,(05C3FH)	;Ì{?\
+	DB	253	;˝
+	RLC	D	;À
+	AND	(HL)	;¶
+	RET	;…
+	RST	8	;œ
+	INC	B	;
+	DEC	(IY+052H)	;˝5R
+	JR	NZ,00CD2H	; E
+	LD	A,018H	;>
+	SUB	B	;ê
+	LD	(05C8CH),A	;2å\
+	LD	HL,(05C8FH)	;*è\
+	PUSH	HL	;Â
+	LD	A,(05C91H)	;:ë\
+	PUSH	AF	;ı
+	LD	A,0FDH	;>˝
+	CALL	01601H	;Õ
+	XOR	A	;Ø
+	LD	DE,00CF8H	;¯
+	CALL	00C0AH	;Õ
+	DB	253	;˝
+	RLC	D	;À
+	XOR	021H	;Ó!
+	DEC	SP	;;
+	LD	E,H	;\
+	SET	3,(HL)	;Àﬁ
+	RES	5,(HL)	;ÀÆ
+	EXX	;Ÿ
+	CALL	015D4H	;Õ‘
+	EXX	;Ÿ
+	CP	020H	;˛ 
+	JR	Z,00D00H	;(E
+	CP	0E2H	;˛‚
+	JR	Z,00D00H	;(A
+	OR	020H	;ˆ 
+	CP	06EH	;˛n
+	JR	Z,00D00H	;(;
+	LD	A,0FEH	;>˛
+	CALL	01601H	;Õ
+	POP	AF	;Ò
+	LD	(05C91H),A	;2ë\
+	POP	HL	;·
+	LD	(05C8FH),HL	;"è\
+	CALL	00DFEH	;Õ˛
+	LD	B,(IY+031H)	;˝F1
+	INC	B	;
+	LD	C,021H	;!
+	PUSH	BC	;≈
+	CALL	00E9BH	;Õõ
+	LD	A,H	;|
+	RRCA
+	RRCA	;
+	RRCA
+	AND	003H	;Ê
+	OR	058H	;ˆX
+	LD	H,A	;g
+	LD	DE,05AE0H	;‡Z
+	LD	A,(DE)
+	LD	C,(HL)	;N
+	LD	B,020H	; 
+	EX	DE,HL	;Î
+	LD	(DE),A
+	LD	(HL),C	;q
+	INC	DE
+	INC	HL	;#
+	DJNZ	00CF0H	;˙
+	POP	BC	;¡
+	RET	;…
+	ADD	A,B	;Ä
+	LD	(HL),E	;s
+	LD	H,E	;c
+	LD	(HL),D	;r
+	LD	L,A	;o
+	LD	L,H	;l
+	LD	L,H	;l
+	CP	A	;ø
+	RST	8	;œ
+	INC	C
+	CP	002H	;˛
+	JR	C,00C86H	;8Ä
+	ADD	A,(IY+031H)	;˝Ü1
+	SUB	019H	;÷
+	RET	NC	;–
+	NEG	;ÌD
+	PUSH	BC	;≈
+	LD	B,A	;G
+	LD	HL,(05C8FH)	;*è\
+	PUSH	HL	;Â
+	LD	HL,(05C91H)	;*ë\
+	PUSH	HL	;Â
+	CALL	00D4DH	;ÕM
+	LD	A,B	;x
+	PUSH	AF	;ı
+	LD	HL,05C6BH	;!k\
+	LD	B,(HL)	;F
+	LD	A,B	;x
+	INC	A	;<
+	LD	(HL),A	;w
+	LD	HL,05C89H	;!â\
+	CP	(HL)	;æ
+	JR	C,00D2DH	;8
+	INC	(HL)	;4
+	LD	B,018H	;
+	CALL	00E00H	;Õ
+	POP	AF	;Ò
+	DEC	A	;=
+	JR	NZ,00D1CH	; Ë
+	POP	HL	;·
+	LD	(IY+057H),L	;˝uW
+	POP	HL	;·
+	LD	(05C8FH),HL	;"è\
+	LD	BC,(05C88H)	;ÌKà\
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,(HL)	;Ü
+	CALL	00DD9H	;ÕŸ
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,0C1H	;∆¡
+	RET	;…
+	XOR	A	;Ø
+	LD	HL,(05C8DH)	;*ç\
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JR	Z,00D5BH	;(
+	LD	H,A	;g
+	LD	L,(IY+00EH)	;˝n
+	LD	(05C8FH),HL	;"è\
+	LD	HL,05C91H	;!ë\
+	JR	NZ,00D65H	; 
+	LD	A,(HL)	;~
+	RRCA	;
+	XOR	(HL)	;Æ
+	AND	055H	;ÊU
+	XOR	(HL)	;Æ
+	LD	(HL),A	;w
+	RET	;…
+	CALL	00DAFH	;ÕØ
+	LD	HL,05C3CH	;!<\
+	RES	5,(HL)	;ÀÆ
+	SET	0,(HL)	;À∆
+	CALL	00D4DH	;ÕM
+	LD	B,(IY+031H)	;˝F1
+	CALL	00E44H	;ÕD
+	LD	HL,05AC0H	;!¿Z
+	LD	A,(05C8DH)	;:ç\
+	DEC	B
+	JR	00D8EH
+	LD	C,020H	; 
+	DEC	HL	;+
+	LD	(HL),A	;w
+	DEC	C	;
+	JR	NZ,00D89H	; ˚
+	DJNZ	00D87H	;˜
+	LD	(IY+031H),002H	;˝61
+	LD	A,0FDH	;>˝
+	CALL	01601H	;Õ
+	LD	HL,(05C51H)	;*Q\
+	LD	DE,009F4H	;Ù
+	AND	A	;ß
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	INC	HL	;#
+	LD	DE,010A8H	;®
+	CCF	;?
+	JR	C,00DA0H	;8ˆ
+	LD	BC,01721H	;!
+	JR	00DD9H	;*
+	LD	HL,00000H	;!
+	LD	(05C7DH),HL	;"}\
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,00D3FH	;0Ü
+	CALL	00D94H	;Õî
+	LD	A,0FEH	;>˛
+	CALL	01601H	;Õ
+	CALL	00D4DH	;ÕM
+	LD	B,018H	;
+	CALL	00E44H	;ÕD
+	LD	HL,(05C51H)	;*Q\
+	LD	DE,009F4H	;Ù
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	LD	(IY+052H),001H	;˝6R
+	LD	BC,01821H	;!
+	LD	HL,05B00H	;![
+	DB	253	;˝
+	RLC	C	;À
+	LD	C,(HL)	;N
+	JR	NZ,00DF4H	; 
+	LD	A,B	;x
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JR	Z,00DEEH	;(
+	ADD	A,(IY+031H)	;˝Ü1
+	SUB	018H	;÷
+	PUSH	BC	;≈
+	LD	B,A	;G
+	CALL	00E9BH	;Õõ
+	POP	BC	;¡
+	LD	A,021H	;>!
+	SUB	C	;ë
+	LD	E,A	;_
+	LD	D,000H
+	ADD	HL,DE	;
+	JP	00ADCH	;√‹
+	LD	B,017H	;
+	CALL	00E9BH	;Õõ
+	LD	C,008H	;
+	PUSH	BC	;≈
+	PUSH	HL	;Â
+	LD	A,B	;x
+	AND	007H	;Ê
+	LD	A,B	;x
+	JR	NZ,00E19H	; 
+	EX	DE,HL	;Î
+	LD	HL,0F8E0H	;!‡¯
+	ADD	HL,DE
+	EX	DE,HL	;Î
+	LD	BC,00020H	; 
+	DEC	A	;=
+	LDIR	;Ì∞
+	EX	DE,HL	;Î
+	LD	HL,0FFE0H	;!‡ˇ
+	ADD	HL,DE	;
+	EX	DE,HL	;Î
+	LD	B,A	;G
+	AND	007H	;Ê
+	RRCA
+	RRCA	;
+	RRCA	;
+	LD	C,A	;O
+	LD	A,B	;x
+	LD	B,000H	;
+	LDIR	;Ì∞
+	LD	B,007H
+	ADD	HL,BC	;
+	AND	0F8H	;Ê¯
+	JR	NZ,00E0DH	; €
+	POP	HL	;·
+	INC	H	;$
+	POP	BC	;¡
+	DEC	C	;
+	JR	NZ,00E05H	; Õ
+	CALL	00E88H	;Õà
+	LD	HL,0FFE0H	;!‡ˇ
+	ADD	HL,DE	;
+	EX	DE,HL	;Î
+	LDIR	;Ì∞
+	LD	B,001H	;
+	PUSH	BC	;≈
+	CALL	00E9BH	;Õõ
+	LD	C,008H	;
+	PUSH	BC	;≈
+	PUSH	HL	;Â
+	LD	A,B	;x
+	AND	007H	;Ê
+	RRCA
+	RRCA	;
+	RRCA	;
+	LD	C,A	;O
+	LD	A,B	;x
+	LD	B,000H
+	DEC	C	;
+	LD	D,H	;T
+	LD	E,L	;]
+	LD	(HL),000H	;6
+	INC	DE	;
+	LDIR	;Ì∞
+	LD	DE,00701H	;
+	ADD	HL,DE	;
+	DEC	A	;=
+	AND	0F8H	;Ê¯
+	LD	B,A	;G
+	JR	NZ,00E4DH	; Â
+	POP	HL	;·
+	INC	H	;$
+	POP	BC	;¡
+	DEC	C	;
+	JR	NZ,00E4AH	; ‹
+	CALL	00E88H	;Õà
+	LD	H,D	;b
+	LD	L,E	;k
+	INC	DE	;
+	LD	A,(05C8DH)	;:ç\
+	DB	253	;˝
+	RLC	D	;À
+	LD	B,(HL)	;F
+	JR	Z,00E80H	;(
+	LD	A,(05C48H)	;:H\
+	LD	(HL),A	;w
+	DEC	BC	;
+	LDIR	;Ì∞
+	POP	BC	;¡
+	LD	C,021H	;!
+	RET	;…
+	LD	A,H	;|
+	RRCA
+	RRCA	;
+	RRCA	;
+	DEC	A	;=
+	OR	050H	;ˆP
+	LD	H,A	;g
+	EX	DE,HL	;Î
+	LD	H,C	;a
+	LD	L,B	;h
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	ADD	HL,HL	;)
+	LD	B,H	;D
+	LD	C,L	;M
+	RET	;…
+	LD	A,018H	;>
+	SUB	B	;ê
+	LD	D,A	;W
+	RRCA
+	RRCA	;
+	RRCA	;
+	AND	0E0H	;Ê‡
+	LD	L,A	;o
+	LD	A,D	;z
+	AND	018H	;Ê
+	OR	040H	;ˆ@
+	LD	H,A	;g
+	RET	;…
+	D1	;Û
+	LD	B,0B0H	;∞
+	LD	HL,04000H	;!@
+	PUSH	HL	;Â
+	PUSH	BC	;≈
+	CALL	00EF4H	;ÕÙ
+	POP	BC	;¡
+	POP	HL	;·
+	INC	H	;$
+	LD	A,H	;|
+	AND	007H	;Ê
+	JR	NZ,00EC9H	; 
+	LD	A,L	;}
+	ADD	A,020H	;∆ 
+	LD	L,A	;o
+	CCF	;?
+	SBC	A,A	;ü
+	AND	0F8H	;Ê¯
+	ADD	A,H	;Ñ
+	LD	H,A	;g
+	DJNZ	00EB2H	;Á
+	JR	00EDAH	;
+	D1	;Û
+	LD	HL,05B00H	;![
+	LD	B,008H	;
+	PUSH	BC	;≈
+	CALL	00EF4H	;ÕÙ
+	POP	BC	;¡
+	DJNZ	00ED3H	;˘
+	LD	A,004H	;>
+	OUT	(0FBH),A	;”˚
+	E1	;˚
+	LD	HL,05B00H	;![
+	LD	(IY+046H),L	;˝uF
+	XOR	A	;Ø
+	LD	B,A	;G
+	LD	(HL),A	;w
+	INC	HL	;#
+	DJNZ	00EE7H	;¸
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,00E7DH	;0é
+	LD	C,021H	;!
+	JP	00DD9H	;√Ÿ
+	LD	A,B	;x
+	CP	003H	;˛
+	SBC	A,A	;ü
+	AND	002H	;Ê
+	OUT	(0FBH),A	;”˚
+	LD	D,A	;W
+	CALL	01F54H	;ÕT
+	JR	C,00F0CH	;8
+	LD	A,004H	;>
+	OUT	(0FBH),A	;”˚
+	E1	;˚
+	CALL	00EDFH	;Õﬂ
+	RST	8	;œ
+	INC	C	;
+	IN	A,(0FBH)	;€˚
+	ADD	A,A	;á
+	RET	M	;¯
+	JR	NC,00EFDH	;0Î
+	LD	C,020H	; 
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	B,008H	;
+	RL	D	;À
+	RL	E	;À
+	RR	D	;À
+	IN	A,(0FBH)	;€˚
+	RRA	;
+	JR	NC,00F1EH	;0˚
+	LD	A,D	;z
+	OUT	(0FBH),A	;”˚
+	DJNZ	00F18H	;
+	DEC	C	;
+	JR	NZ,00F14H	; È
+	RET	;…
+	LD	HL,(05C3DH)	;*=\
+	PUSH	HL	;Â
+	LD	HL,0107FH	;!
+	PUSH	HL	;Â
+	LD	(05C3DH),SP	;Ìs=\
+	CALL	015D4H	;Õ‘
+	PUSH	AF	;ı
+	LD	D,000H	;
+	LD	E,(IY+0FFH)	;˝^ˇ
+	LD	HL,000C8H	;!»
+	CALL	003B5H	;Õµ
+	POP	AF	;Ò
+	LD	HL,00F38H	;!8
+	PUSH	HL	;Â
+	CP	018H	;˛
+	JR	NC,00F81H	;01
+	CP	007H	;˛
+	JR	C,00F81H	;8-
+	CP	010H	;˛
+	JR	C,00F92H	;8:
+	LD	BC,00002H	;
+	LD	D,A	;W
+	CP	016H	;˛
+	JR	C,00F6CH	;8
+	INC	BC	;
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	A,(HL)	;~
+	JP	Z,0101EH	; 
+	CALL	015D4H	;Õ‘
+	LD	E,A	;_
+	CALL	015D4H	;Õ‘
+	PUSH	DE	;’
+	LD	HL,(05C5BH)	;*[\
+	DB	253	;˝
+	RLC	A	;À
+	ADD	A,(HL)	;Ü
+	CALL	01655H	;ÕU
+	POP	BC	;¡
+	INC	HL	;#
+	LD	(HL),B	;p
+	INC	HL	;#
+	LD	(HL),C	;q
+	JR	00F8BH	;
+	DB	253	;˝
+	RLC	A	;À
+	ADD	A,(HL)	;Ü
+	LD	HL,(05C5BH)	;*[\
+	CALL	01652H	;ÕR
+	LD	(DE),A	;
+	INC	DE	;
+	LD	(05C5BH),DE	;ÌS[\
+	RET	;…
+	LD	E,A	;_
+	LD	D,000H	;
+	LD	HL,00F99H	;!ô
+	ADD	HL,DE
+	LD	E,(HL)	;^
+	ADD	HL,DE	;
+	PUSH	HL	;Â
+	LD	HL,(05C5BH)	;*[\
+	RET	;…
+	ADD	HL,BC	;
+	LD	H,(HL)	;f
+	LD	L,D	;j
+	LD	D,B	;P
+	OR	L	;µ
+	LD	(HL),B	;p
+	LD	A,(HL)	;~
+	RST	8	;œ
+	CALL	NC,0492AH	;‘*I
+	LD	E,H	;\
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	JP	NZ,01097H	;¬ó
+	CALL	0196EH	;Õn
+	CALL	01695H	;Õï
+	LD	A,D	;z
+	OR	E	;≥
+	JP	Z,01097H	; ó
+	PUSH	HL	;Â
+	INC	HL	;#
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	LD	HL,0000AH	;!
+	ADD	HL,BC	;
+	LD	B,H	;D
+	LD	C,L	;M
+	CALL	01F05H	;Õ
+	CALL	01097H	;Õó
+	LD	HL,(05C51H)	;*Q\
+	EX	(SP),HL	;„
+	PUSH	HL	;Â
+	LD	A,0FFH	;>ˇ
+	CALL	01601H	;Õ
+	POP	HL	;·
+	DEC	HL	;+
+	DEC	(IY+00FH)	;˝5
+	CALL	01855H	;ÕU
+	INC	(IY+00FH)	;˝4
+	LD	HL,(05C59H)	;*Y\
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	(05C5BH),HL	;"[\
+	POP	HL	;·
+	CALL	01615H	;Õ
+	RET	;…
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	JR	NZ,01001H	; 
+	LD	HL,05C49H	;!I\
+	CALL	0190FH	;Õ
+	JR	0106EH	;m
+	LD	(IY+000H),010H	;˝6
+	JR	01024H	;
+	CALL	01031H	;Õ1
+	JR	01011H	;
+	LD	A,(HL)	;~
+	CP	00DH	;˛
+	RET	Z	;»
+	INC	HL	;#
+	LD	(05C5BH),HL	;"[\
+	RET	;…
+	CALL	01031H	;Õ1
+	LD	BC,00001H	;
+	JP	019E8H	;√Ë
+	CALL	015D4H	;Õ‘
+	CALL	015D4H	;Õ‘
+	POP	HL	;·
+	POP	HL	;·
+	POP	HL	;·
+	LD	(05C3DH),HL	;"=\
+	DB	253	;˝
+	RLC	B	;À
+	LD	A,(HL)	;~
+	RET	NZ	;¿
+	LD	SP,HL	;˘
+	RET	;…
+	SCF	;7
+	CALL	01195H	;Õï
+	SBC	HL,DE	;ÌR
+	ADD	HL,DE	;
+	INC	HL	;#
+	POP	BC	;¡
+	RET	C	;ÿ
+	PUSH	BC	;≈
+	LD	B,H	;D
+	LD	C,L	;M
+	LD	H,D	;b
+	LD	L,E	;k
+	INC	HL	;#
+	LD	A,(DE)	;
+	AND	0F0H	;Ê
+	CP	010H	;˛
+	JR	NZ,01051H	; 
+	INC	HL	;#
+	LD	A,(DE)
+	SUB	017H	;÷
+	ADC	A,000H	;Œ
+	JR	NZ,01051H	; 
+	INC	HL	;#
+	AND	A	;ß
+	SBC	HL,BC	;ÌB
+	ADD	HL,BC	;
+	EX	DE,HL	;Î
+	JR	C,0103EH	;8Ê
+	RET	;…
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	RET	NZ	;¿
+	LD	HL,(05C49H)	;*I\
+	CALL	0196EH	;Õn
+	EX	DE,HL	;Î
+	CALL	01695H	;Õï
+	LD	HL,05C4AH	;!J\
+	CALL	0191CH	;Õ
+	CALL	01795H	;Õï
+	LD	A,000H	;>
+	JP	01601H	;√
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	A,(HL)	;~
+	JR	Z,01024H	;(®
+	JP	00F81H	;√Å
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,010E9H	;0f
+	JR	Z,01026H	;(°
+	LD	(IY+000H),0FFH	;˝6ˇ
+	LD	D,000H	;
+	LD	E,(IY+0FEH)	;˝^˛
+	LD	HL,01A90H	;!ê
+	CALL	003B5H	;Õµ
+	JP	00F30H	;√0
+	PUSH	HL	;Â
+	CALL	01190H	;Õê
+	DEC	HL	;+
+	CALL	019E5H	;ÕÂ
+	LD	(05C5BH),HL	;"[\
+	LD	(IY+007H),000H	;˝6
+	POP	HL	;·
+	RET	;…
+	DB	253	;˝
+	RLC	D	;À
+	LD	E,(HL)	;^
+	CALL	NZ,0111DH	;ƒ
+	AND	A	;ß
+	DB	253	;˝
+	RLC	C	;À
+	LD	L,(HL)	;n
+	RET	Z	;»
+	LD	A,(05C08H)	;:\
+	DB	253	;˝
+	RLC	C	;À
+	XOR	(HL)	;Æ
+	PUSH	AF	;ı
+	DB	253	;˝
+	RLC	D	;À
+	LD	L,(HL)	;n
+	CALL	NZ,00D6EH	;ƒn
+	POP	AF	;Ò
+	CP	020H	;˛ 
+	JR	NC,0111BH	;0R
+	CP	010H	;˛
+	JR	NC,010FAH	;0-
+	CP	006H	;˛
+	JR	NC,010DBH	;0
+	LD	B,A	;G
+	AND	001H	;Ê
+	LD	C,A	;O
+	LD	A,B	;x
+	RRA
+	ADD	A,012H	;∆
+	JR	01105H	;*
+	JR	NZ,010E6H	; 
+	LD	HL,05C6AH	;!j\
+	LD	A,008H	;>
+	XOR	(HL)	;Æ
+	LD	(HL),A	;w
+	JR	010F4H	;
+	CP	00EH	;˛
+	RET	C	;ÿ
+	SUB	00DH	;÷
+	LD	HL,05C41H	;!A\
+	CP	(HL)	;æ
+	LD	(HL),A	;w
+	JR	NZ,010F4H	; 
+	LD	(HL),000H	;6
+	DB	253	;˝
+	RLC	D	;À
+	SBC	A,0BFH	;ﬁø
+	RET	;…
+	LD	B,A	;G
+	AND	007H	;Ê
+	LD	C,A	;O
+	LD	A,010H	;>
+	BIT	3,B	;ÀX
+	JR	NZ,01105H	; 
+	INC	A	;<
+	LD	(IY+0D3H),C	;˝q”
+	LD	DE,0110DH	;
+	JR	01113H	;
+	LD	A,(05C0DH)	;:\
+	LD	DE,010A8H	;®
+	LD	HL,(05C4FH)	;*O\
+	INC	HL	;#
+	INC	HL	;#
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	SCF	;7
+	RET	;…
+	CALL	00D4DH	;ÕM
+	DB	253	;˝
+	RLC	D	;À
+	SBC	A,(HL)	;û
+	DB	253	;˝
+	RLC	D	;À
+	XOR	(HL)	;Æ
+	LD	HL,(05C8AH)	;*ä\
+	PUSH	HL	;Â
+	LD	HL,(05C3DH)	;*=\
+	PUSH	HL	;Â
+	LD	HL,01167H	;!g
+	PUSH	HL	;Â
+	LD	(05C3DH),SP	;Ìs=\
+	LD	HL,(05C82H)	;*Ç\
+	PUSH	HL	;Â
+	SCF	;7
+	CALL	01195H	;Õï
+	EX	DE,HL	;Î
+	CALL	0187DH	;Õ}
+	EX	DE,HL	;Î
+	CALL	018E1H	;Õ·
+	LD	HL,(05C8AH)	;*ä\
+	EX	(SP),HL	;„
+	EX	DE,HL	;Î
+	CALL	00D4DH	;ÕM
+	LD	A,(05C8BH)	;:ã\
+	SUB	D	;í
+	JR	C,0117CH	;8&
+	JR	NZ,0115EH	; 
+	LD	A,E	;{
+	SUB	(IY+050H)	;˝ñP
+	JR	NC,0117CH	;0
+	LD	A,020H	;> 
+	PUSH	DE	;’
+	CALL	009F4H	;ÕÙ
+	POP	DE	;—
+	JR	01150H	;È
+	LD	D,000H	;
+	LD	E,(IY+0FEH)	;˝^˛
+	LD	HL,01A90H	;!ê
+	CALL	003B5H	;Õµ
+	LD	(IY+000H),0FFH	;˝6ˇ
+	LD	DE,(05C8AH)	;Ì[ä\
+	JR	0117EH	;
+	POP	DE	;—
+	POP	HL	;·
+	POP	HL	;·
+	LD	(05C3DH),HL	;"=\
+	POP	BC	;¡
+	PUSH	DE	;’
+	CALL	00DD9H	;ÕŸ
+	POP	HL	;·
+	LD	(05C82H),HL	;"Ç\
+	LD	(IY+026H),000H	;˝6&
+	RET	;…
+	LD	HL,(05C61H)	;*a\
+	DEC	HL	;+
+	AND	A	;ß
+	LD	DE,(05C59H)	;Ì[Y\
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	RET	Z	;»
+	LD	DE,(05C61H)	;Ì[a\
+	RET	C	;ÿ
+	LD	HL,(05C63H)	;*c\
+	RET	;…
+	LD	A,(HL)	;~
+	CP	00EH	;˛
+	LD	BC,00006H	;
+	CALL	Z,019E8H	;ÃË
+	LD	A,(HL)	;~
+	INC	HL	;#
+	CP	00DH	;˛
+	JR	NZ,011A7H	; Ò
+	RET	;…
+	D1	;Û
+	LD	A,0FFH	;>ˇ
+	LD	DE,(05CB2H)	;Ì[≤\
+	EXX	;Ÿ
+	LD	BC,(05CB4H)	;ÌK¥\
+	LD	DE,(05C38H)	;Ì[8\
+	LD	HL,(05C7BH)	;*{\
+	EXX	;Ÿ
+	LD	B,A	;G
+	LD	A,007H	;>
+	OUT	(0FEH),A	;”˛
+	LD	A,03FH	;>?
+	LD	1,A	;ÌG
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP	;
+	NOP	;
+	LD	H,D	;b
+	LD	L,E	;k
+	LD	(HL),002H	;6
+	DEC	HL	;+
+	CP	H	;º
+	JR	NZ,011DCH	; ˙
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	ADD	HL,DE	;
+	INC	HL	;#
+	JR	NC,011EFH	;0
+	DEC	(HL)	;5
+	JR	Z,011EFH	;(
+	DEC	(HL)	;5
+	JR	Z,011E2H	;(Û
+	DEC	HL	;+
+	EXX	;Ÿ
+	LD	(05CB4H),BC	;ÌC¥\
+	LD	(05C38H),DE	;ÌS8\
+	LD	(05C7BH),HL	;"{\
+	EXX	;Ÿ
+	INC	B
+	JR	Z,01219H	;(
+	LD	(05CB4H),HL	;"¥\
+	LD	DE,03EAFH	;Ø>
+	LD	BC,000A8H	;®
+	EX	DE,HL	;Î
+	LDDR	;Ì∏
+	EX	DE,HL	;Î
+	INC	HL	;#
+	LD	(05C7BH),HL	;"{\
+	DEC	HL	;+
+	LD	BC,00040H	;@
+	LD	(05C38H),BC	;ÌC8\
+	LD	(05CB2H),HL	;"≤\
+	LD	HL,03C00H	;!<
+	LD	(05C36H),HL	;"6\
+	LD	HL,(05CB2H)	;*≤\
+	LD	(HL),03EH	;6>
+	DEC	HL	;+
+	LD	SP,HL	;˘
+	DEC	HL	;+
+	DEC	HL	;+
+	LD	(05C3DH),HL	;"=\
+	IM	1	;ÌV
+	LD	IY,05C3AH	;˝!:\
+	E1	;˚
+	LD	HL,05CB6H	;!∂\
+	LD	(05C4FH),HL	;"O\
+	LD	DE,015AFH	;Ø
+	LD	BC,00015H	;
+	EX	DE,HL	;Î
+	LDIR	;Ì∞
+	EX	DE,HL	;Î
+	DEC	HL	;+
+	LD	(05C57H),HL	;"W\
+	INC	HL	;#
+	LD	(05C53H),HL	;"S\
+	LD	(05C4BH),HL	;"K\
+	LD	(HL),080H	;6Ä
+	INC	HL	;#
+	LD	(05C59H),HL	;"Y\
+	LD	(HL),00DH	;6
+	INC	HL	;#
+	LD	(HL),080H	;6Ä
+	INC	HL	;#
+	LD	(05C61H),HL	;"a\
+	LD	(05C63H),HL	;"c\
+	LD	(05C65H),HL	;"e\
+	LD	A,038H	;>8
+	LD	(05C8DH),A	;2ç\
+	LD	(05C8FH),A	;2è\
+	LD	(05C48H),A	;2H\
+	LD	HL,00523H	;!#
+	LD	(05C09H),HL	;"\
+	DEC	(IY+0C6H)	;˝5∆
+	DEC	(IY+0CAH)	;˝5 
+	LD	HL,015C6H	;!∆
+	LD	DE,05C10H	;\
+	LD	BC,0000EH	;
+	LDIR	;Ì∞
+	DB	253	;˝
+	RLC	C	;À
+	ADC	A,0CDH	;ŒÕ
+	RST	18H	;ﬂ
+	LD	C,0FDH	;˝
+	LD	(HL),031H	;61
+	LD	(BC),A	;
+	CALL	00D6BH	;Õk
+	XOR	A	;Ø
+	LD	DE,01538H	;8
+	CALL	00C0AH	;Õ
+	DB	253	;˝
+	RLC	D	;À
+	XOR	018H	;Ó
+	RLCA	;
+	LD	(IY+031H),002H	;˝61
+	CALL	01795H	;Õï
+	CALL	016B0H	;Õ∞
+	LD	A,000H	;>
+	CALL	01601H	;Õ
+	CALL	00F2CH	;Õ,
+	CALL	01B17H	;Õ
+	DB	253	;˝
+	RLC	B	;À
+	LD	A,(HL)	;~
+	JR	NZ,012CFH	; 
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,01327H	;0f
+	JR	Z,01303H	;(@
+	LD	HL,(05C59H)	;*Y\
+	CALL	011A7H	;Õß
+	LD	(IY+000H),0FFH	;˝6ˇ
+	JR	012ACH	;›
+	LD	HL,(05C59H)	;*Y\
+	LD	(05C5DH),HL	;"]\
+	CALL	019FBH	;Õ˚
+	LD	A,B	;x
+	OR	C	;±
+	JP	NZ,0155DH	;¬]
+	RST	18H	;ﬂ
+	CP	00DH	;˛
+	JR	Z,012A2H	;(¿
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,0132CH	;0F
+	CALL	NZ,00DAFH	;ƒØ
+	CALL	00D6EH	;Õn
+	LD	A,019H	;>
+	SUB	(IY+04FH)	;˝ñO
+	LD	(05C8CH),A	;2å\
+	DB	253	;˝
+	RLC	C	;À
+	CP	0FDH	;˛˝
+	LD	(HL),000H	;6
+	RST	38H	;ˇ
+	LD	(IY+00AH),001H	;˝6
+	CALL	01B8AH	;Õä
+	HALT	;v
+	DB	253	;˝
+	RLC	C	;À
+	XOR	(HL)	;Æ
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,0135AH	;0N
+	CALL	NZ,00ECDH	;ƒÕ
+	LD	A,(05C3AH)	;::\
+	INC	A	;<
+	PUSH	AF	;ı
+	LD	HL,00000H	;!
+	LD	(IY+037H),H	;˝t7
+	LD	(IY+026H),H	;˝t&
+	LD	(05C0BH),HL	;"\
+	LD	HL,00001H	;!
+	LD	(05C16H),HL	;"\
+	CALL	016B0H	;Õ∞
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	XOR	(HL)	;Æ
+	CALL	00D6EH	;Õn
+	DB	253	;˝
+	RLC	D	;À
+	XOR	0F1H	;ÓÒ
+	LD	B,A	;G
+	CP	00AH	;˛
+	JR	C,0133CH	;8
+	ADD	A,007H	;∆
+	CALL	015EFH	;ÕÔ
+	LD	A,020H	;> 
+	RST	10H	;◊
+	LD	A,B	;x
+	LD	DE,01391H	;ë
+	CALL	00C0AH	;Õ
+	XOR	A	;Ø
+	LD	DE,01536H	;6
+	CALL	00C0AH	;Õ
+	LD	BC,(05C45H)	;ÌKE\
+	CALL	01A1BH	;Õ
+	LD	A,03AH	;>:
+	RST	10H	;◊
+	LD	C,(IY+00DH)	;˝N
+	LD	B,000H	;
+	CALL	01A1BH	;Õ
+	CALL	01097H	;Õó
+	LD	A,(05C3AH)	;::\
+	INC	A	;<
+	JR	Z,01386H	;(
+	CP	009H	;˛
+	JR	Z,01373H	;(
+	CP	015H	;˛
+	JR	NZ,01376H	; 
+	INC	(IY+00DH)	;˝4
+	LD	BC,00003H	;
+	LD	DE,05C70H	;p\
+	LD	HL,05C44H	;!D\
+	BIT	7,(HL)	;À~
+	JR	Z,01384H	;(
+	ADD	HL,BC	;
+	LDDR	;Ì∏
+	LD	(IY+00AH),0FFH	;˝6ˇ
+	DB	253	;˝
+	RLC	C	;À
+	SBC	A,(HL)	;û
+	JP	012ACH	;√¨
+	ADD	A,B	;Ä
+	LD	C,A	;O
+	BIT	1,(HL)	;ÀN
+	LD	B,L	;E
+	LD	E,B	;X
+	LD	D,H	;T
+	JR	NZ,01411H	; w
+	LD	L,C	;i
+	LD	(HL),H	;t
+	LD	L,B	;h
+	LD	L,A	;o
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,013E8H	; F
+	LD	C,A	;O
+	JP	NC,06156H	;“Va
+	LD	(HL),D	;r
+	LD	L,C	;i
+	LD	H,C	;a
+	LD	H,D	;b
+	LD	L,H	;l
+	LD	H,L	;e
+	JR	NZ,0141CH	; n
+	LD	L,A	;o
+	LD	(HL),H	;t
+	JR	NZ,01418H	; f
+	LD	L,A	;o
+	LD	(HL),L	;u
+	LD	L,(HL)	;n
+	CALL	PO,07553H	;‰Su
+	LD	H,D	;b
+	LD	(HL),E	;s
+	LD	H,E	;c
+	LD	(HL),D	;r
+	LD	L,C	;i
+	LD	(HL),B	;p
+	LD	(HL),H	;t
+	JR	NZ,01438H	; w
+	LD	(HL),D	;r
+	LD	L,A	;o
+	LD	L,(HL)	;n
+	RST	20H	;Á
+	LD	C,A	;O
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,01439H	; o
+	LD	H,(HL)	;f
+	JR	NZ,0143AH	; m
+	LD	H,L	;e
+	LD	L,L	;m
+	LD	L,A	;o
+	LD	(HL),D	;r
+	LD	SP,HL	;˘
+	LD	C,A	;O
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,01446H	; o
+	LD	H,(HL)	;f
+	JR	NZ,0144DH	; s
+	LD	H,E	;c
+	LD	(HL),D	;r
+	LD	H,L	;e
+	LD	H,L	;e
+	XOR	04EH	;ÓN
+	LD	(HL),L	;u
+	LD	L,L	;m
+	LD	H,D	;b
+	LD	H,L	;e
+	LD	(HL),D	;r
+	JR	NZ,0145BH	; t
+	LD	L,A	;o
+	LD	L,A	;o
+	JR	NZ,0144DH	; b
+	LD	L,C	;i
+	RST	20H	;Á
+	LD	D,D	;R
+	LD	B,L	;E
+	LD	D,H	;T
+	LD	D,L	;U
+	LD	D,D	;R
+	LD	C,(HL)	;N
+	JR	NZ,0146CH	; w
+	LD	L,C	;i
+	LD	(HL),H	;t
+	LD	L,B	;h
+	LD	L,A	;o
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,01444H	; G
+	LD	C,A	;O
+	LD	D,E	;S
+	LD	D,L	;U
+	JP	NZ,06E45H	;¬En
+	LD	H,H	;d
+	JR	NZ,01475H	; o
+	LD	H,(HL)	;f
+	JR	NZ,0146FH	; f
+	LD	L,C	;i
+	LD	L,H	;l
+	PUSH	HL	;Â
+	LD	D,E	;S
+	LD	D,H	;T
+	LD	C,A	;O
+	LD	D,B	;P
+	JR	NZ,01485H	; s
+	LD	(HL),H	;t
+	LD	H,C	;a
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	L,L	;m
+	LD	H,L	;e
+	LD	L,(HL)	;n
+	CALL	P,06E49H	;ÙIn
+	HALT	;v
+	LD	H,C	;a
+	LD	L,H	;l
+	LD	L,C	;i
+	LD	H,H	;d
+	JR	NZ,01484H	; a
+	LD	(HL),D	;r
+	LD	H,A	;g
+	LD	(HL),L	;u
+	LD	L,L	;m
+	LD	H,L	;e
+	LD	L,(HL)	;n
+	CALL	P,06E49H	;ÙIn
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	H,A	;g
+	LD	H,L	;e
+	LD	(HL),D	;r
+	JR	NZ,014A2H	; o
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,014A6H	; o
+	LD	H,(HL)	;f
+	JR	NZ,014ACH	; r
+	LD	H,C	;a
+	LD	L,(HL)	;n
+	LD	H,A	;g
+	PUSH	HL	;Â
+	LD	C,(HL)	;N
+	LD	L,A	;o
+	LD	L,(HL)	;n
+	LD	(HL),E	;s
+	LD	H,L	;e
+	LD	L,(HL)	;n
+	LD	(HL),E	;s
+	LD	H,L	;e
+	JR	NZ,014B1H	; i
+	LD	L,(HL)	;n
+	JR	NZ,0148DH	; B
+	LD	B,C	;A
+	LD	D,E	;S
+	LD	C,C	;I
+	JP	05242H	;√BR
+	LD	B,L	;E
+	LD	B,C	;A
+	LD	C,E	;K
+	JR	NZ,01483H	; -
+	JR	NZ,0149BH	; C
+	LD	C,A	;O
+	LD	C,(HL)	;N
+	LD	D,H	;T
+	JR	NZ,014CFH	; r
+	LD	H,L	;e
+	LD	(HL),B	;p
+	LD	H,L	;e
+	LD	H,C	;a
+	LD	(HL),H	;t
+	D1	;Û
+	LD	C,A	;O
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,014D7H	; o
+	LD	H,(HL)	;f
+	JR	NZ,014AFH	; D
+	LD	B,C	;A
+	LD	D,H	;T
+	POP	BC	;¡
+	LD	C,C	;I
+	LD	L,(HL)	;n
+	HALT	;v
+	LD	H,C	;a
+	LD	L,H	;l
+	LD	L,C	;i
+	LD	H,H	;d
+	JR	NZ,014DDH	; f
+	LD	L,C	;i
+	LD	L,H	;l
+	LD	H,L	;e
+	JR	NZ,014EAH	; n
+	LD	H,C	;a
+	LD	L,L	;m
+	PUSH	HL	;Â
+	LD	C,(HL)	;N
+	LD	L,A	;o
+	JR	NZ,014F5H	; r
+	LD	L,A	;o
+	LD	L,A	;o
+	LD	L,L	;m
+	JR	NZ,014EEH	; f
+	LD	L,A	;o
+	LD	(HL),D	;r
+	JR	NZ,014F8H	; l
+	LD	L,C	;i
+	LD	L,(HL)	;n
+	PUSH	HL	;Â
+	LD	D,E	;S
+	LD	D,H	;T
+	LD	C,A	;O
+	LD	D,B	;P
+	JR	NZ,014FEH	; i
+	LD	L,(HL)	;n
+	JR	NZ,014E1H	; I
+	LD	C,(HL)	;N
+	LD	D,B	;P
+	LD	D,L	;U
+	CALL	NC,04F46H	;‘FO
+	LD	D,D	;R
+	JR	NZ,01518H	; w
+	LD	L,C	;i
+	LD	(HL),H	;t
+	LD	L,B	;h
+	LD	L,A	;o
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,014F7H	; N
+	LD	B,L	;E
+	LD	E,B	;X
+	CALL	NC,06E49H	;‘In
+	HALT	;v
+	LD	H,C	;a
+	LD	L,H	;l
+	LD	L,C	;i
+	LD	H,H	;d
+	JR	NZ,014FEH	; I
+	CPL	;/
+	LD	C,A	;O
+	JR	NZ,0151DH	; d
+	LD	H,L	;e
+	HALT	;v
+	LD	L,C	;i
+	LD	H,E	;c
+	PUSH	HL	;Â
+	LD	C,C	;I
+	LD	L,(HL)	;n
+	HALT	;v
+	LD	H,C	;a
+	LD	L,H	;l
+	LD	L,C	;i
+	LD	H,H	;d
+	JR	NZ,0152AH	; c
+	LD	L,A	;o
+	LD	L,H	;l
+	LD	L,A	;o
+	LD	(HL),L	;u
+	JR	P,0150FH	;ÚB
+	LD	D,D	;R
+	LD	B,L	;E
+	LD	B,C	;A
+	LD	C,E	;K
+	JR	NZ,0153CH	; i
+	LD	L,(HL)	;n
+	LD	(HL),H	;t
+	LD	L,A	;o
+	JR	NZ,01548H	; p
+	LD	(HL),D	;r
+	LD	L,A	;o
+	LD	H,A	;g
+	LD	(HL),D	;r
+	LD	H,C	;a
+	SBC	HL,DE	;ÌR
+	LD	B,C	;A
+	LD	C,L	;M
+	LD	D,H	;T
+	LD	C,A	;O
+	LD	D,B	;P
+	JR	NZ,01554H	; n
+	LD	L,A	;o
+	JR	NZ,01550H	; g
+	LD	L,A	;o
+	LD	L,A	;o
+	CALL	PO,07453H	;‰St
+	LD	H,C	;a
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	L,L	;m
+	LD	H,L	;e
+	LD	L,(HL)	;n
+	LD	(HL),H	;t
+	JR	NZ,01563H	; l
+	LD	L,A	;o
+	LD	(HL),E	;s
+	CALL	P,06E49H	;ÙIn
+	HALT	;v
+	LD	H,C	;a
+	LD	L,H	;l
+	LD	L,C	;i
+	LD	H,H	;d
+	JR	NZ,01576H	; s
+	LD	(HL),H	;t
+	LD	(HL),D	;r
+	LD	H,L	;e
+	LD	H,C	;a
+	IM	0	;ÌF
+	LD	C,(HL)	;N
+	JR	NZ,01583H	; w
+	LD	L,C	;i
+	LD	(HL),H	;t
+	LD	L,B	;h
+	LD	L,A	;o
+	LD	(HL),L	;u
+	LD	(HL),H	;t
+	JR	NZ,01558H	; D
+	LD	B,L	;E
+	ADD	A,050H	;∆P
+	LD	H,C	;a
+	LD	(HL),D	;r
+	LD	H,C	;a
+	LD	L,L	;m
+	LD	H,L	;e
+	LD	(HL),H	;t
+	LD	H,L	;e
+	LD	(HL),D	;r
+	JR	NZ,01586H	; e
+	LD	(HL),D	;r
+	LD	(HL),D	;r
+	LD	L,A	;o
+	JR	P,0157AH	;ÚT
+	LD	H,C	;a
+	LD	(HL),B	;p
+	LD	H,L	;e
+	JR	NZ,01597H	; l
+	LD	L,A	;o
+	LD	H,C	;a
+	LD	H,H	;d
+	LD	L,C	;i
+	LD	L,(HL)	;n
+	LD	H,A	;g
+	JR	NZ,01598H	; e
+	LD	(HL),D	;r
+	LD	(HL),D	;r
+	LD	L,A	;o
+	JR	P,01564H	;Ú,
+	AND	B	;†
+	LD	A,A	;
+	JR	NZ,0156DH	; 1
+	ADD	HL,SP	;9
+	JR	C,01571H	;82
+	JR	NZ,01594H	; S
+	LD	L,C	;i
+	LD	L,(HL)	;n
+	LD	H,E	;c
+	LD	L,H	;l
+	LD	H,C	;a
+	LD	L,C	;i
+	LD	(HL),D	;r
+	JR	NZ,0159CH	; R
+	LD	H,L	;e
+	LD	(HL),E	;s
+	LD	H,L	;e
+	LD	H,C	;a
+	LD	(HL),D	;r
+	LD	H,E	;c
+	LD	L,B	;h
+	JR	NZ,0159FH	; L
+	LD	(HL),H	;t
+	CALL	PO,0103EH	;‰>
+	LD	BC,00000H	;
+	JP	01313H	;√
+	LD	(05C49H),BC	;ÌCI\
+	LD	HL,(05C5DH)	;*]\
+	EX	DE,HL	;Î
+	LD	HL,01555H	;!U
+	PUSH	HL	;Â
+	LD	HL,(05C61H)	;*a\
+	SCF	;7
+	SBC	HL,DE	;ÌR
+	PUSH	HL	;Â
+	LD	H,B	;`
+	LD	L,C	;i
+	CALL	0196EH	;Õn
+	JR	NZ,0157DH	; 
+	CALL	019B8H	;Õ∏
+	CALL	019E8H	;ÕË
+	POP	BC	;¡
+	LD	A,C	;y
+	DEC	A	;=
+	OR	B	;∞
+	JR	Z,015ABH	;((
+	PUSH	BC	;≈
+	INC	BC
+	INC	BC
+	INC	BC	;
+	INC	BC	;
+	DEC	HL	;+
+	LD	DE,(05C53H)	;Ì[S\
+	PUSH	DE	;’
+	CALL	01655H	;ÕU
+	POP	HL	;·
+	LD	(05C53H),HL	;"S\
+	POP	BC	;¡
+	PUSH	BC	;≈
+	INC	DE	;
+	LD	HL,(05C61H)	;*a\
+	DEC	HL	;+
+	DEC	HL	;+
+	LDDR	;Ì∏
+	LD	HL,(05C49H)	;*I\
+	EX	DE,HL	;Î
+	POP	BC	;¡
+	LD	(HL),B	;p
+	DEC	HL	;+
+	LD	(HL),C	;q
+	DEC	HL	;+
+	LD	(HL),E	;s
+	DEC	HL	;+
+	LD	(HL),D	;r
+	POP	AF	;Ò
+	JP	012A2H	;√¢
+	CALL	P,0A809H	;Ù®
+	DJNZ	015FFH	;K
+	CALL	P,0C409H	;Ùƒ
+	DEC	D	;
+	LD	D,E	;S
+	ADD	A,C	;Å
+	RRCA
+	CALL	NZ,05215H	;ƒR
+	CALL	P,0C409H	;Ùƒ
+	DEC	D	;
+	LD	D,B	;P
+	ADD	A,B	;Ä
+	RST	8	;œ
+	LD	(DE),A
+	LD	BC,00600H	;
+	NOP
+	DEC	BC
+	NOP
+	LD	BC,00100H	;
+	NOP
+	LD	B,000H
+	DJNZ	015D4H	;
+	DB	253	;˝
+	RLC	D	;À
+	LD	L,(HL)	;n
+	JR	NZ,015DEH	; 
+	DB	253	;˝
+	RLC	D	;À
+	SBC	A,0CDH	;ﬁÕ
+	AND	015H	;Ê
+	RET	C	;ÿ
+	JR	Z,015DEH	;(˙
+	RST	8	;œ
+	RLCA	;
+	EXX	;Ÿ
+	PUSH	HL	;Â
+	LD	HL,(05C51H)	;*Q\
+	INC	HL	;#
+	INC	HL	;#
+	JR	015F7H
+	LD	E,030H	;0
+	ADD	A,E	;É
+	EXX	;Ÿ
+	PUSH	HL	;Â
+	LD	HL,(05C51H)	;*Q\
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	EX	DE,HL	;Î
+	CALL	0162CH	;Õ,
+	POP	HL	;·
+	EXX	;Ÿ
+	RET	;…
+	ADD	A,A	;á
+	ADD	A,016H	;∆
+	LD	L,A	;o
+	LD	H,05CH	;&\
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	LD	A,D	;z
+	OR	E	;≥
+	JR	NZ,01610H	; 
+	RST	8	;œ
+	RLA	;
+	DEC	DE	;
+	LD	HL,(05C4FH)	;*O\
+	ADD	HL,DE	;
+	LD	(05C51H),HL	;"Q\
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,015C2H	;0¶
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	C,(HL)	;N
+	LD	HL,0162DH	;!-
+	CALL	016DCH	;Õ‹
+	RET	NC	;–
+	LD	D,000H	;
+	LD	E,(HL)	;^
+	ADD	HL,DE	;
+	JP	(HL)	;È
+	LD	C,E	;K
+	LD	B,053H	;S
+	LD	(DE),A
+	LD	D,B	;P
+	DEC	DE	;
+	NOP	;
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,0FDH	;∆˝
+	RLC	C	;À
+	XOR	(HL)	;Æ
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,01626H	;0Ê
+	JR	01646H	;
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,(HL)	;Ü
+	DB	253	;˝
+	RLC	C	;À
+	ADC	A,(HL)	;é
+	JP	00D4DH	;√M
+	DB	253	;˝
+	RLC	C	;À
+	ADC	A,0C9H	;Œ…
+	LD	BC,00001H	;
+	PUSH	HL	;Â
+	CALL	01F05H	;Õ
+	POP	HL	;·
+	CALL	01664H	;Õd
+	LD	HL,(05C65H)	;*e\
+	EX	DE,HL	;Î
+	LDDR	;Ì∏
+	RET	;…
+	PUSH	AF	;ı
+	PUSH	HL	;Â
+	LD	HL,05C4BH	;!K\
+	LD	A,00EH	;>
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	EX	(SP),HL	;„
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	ADD	HL,DE	;
+	EX	(SP),HL	;„
+	JR	NC,0167FH	;0
+	PUSH	DE	;’
+	EX	DE,HL	;Î
+	ADD	HL,BC	;
+	EX	DE,HL	;Î
+	LD	(HL),D	;r
+	DEC	HL	;+
+	LD	(HL),E	;s
+	INC	HL	;#
+	POP	DE	;—
+	INC	HL	;#
+	DEC	A	;=
+	JR	NZ,0166BH	; Ë
+	EX	DE,HL	;Î
+	POP	DE	;—
+	POP	AF	;Ò
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	LD	B,H	;D
+	LD	C,L	;M
+	INC	BC	;
+	ADD	HL,DE	;
+	EX	DE,HL	;Î
+	RET	;…
+	NOP	;
+	NOP
+	EX	DE,HL	;Î
+	LD	DE,0168FH	;è
+	LD	A,(HL)	;~
+	AND	0C0H	;Ê¿
+	JR	NZ,01691H	; ˜
+	LD	D,(HL)	;V
+	INC	HL	;#
+	LD	E,(HL)	;^
+	RET	;…
+	LD	HL,(05C63H)	;*c\
+	DEC	HL	;+
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	INC	HL	;#
+	POP	BC	;¡
+	LD	(05C61H),BC	;ÌCa\
+	POP	BC	;¡
+	EX	DE,HL	;Î
+	INC	HL	;#
+	RET	;…
+	LD	HL,(05C59H)	;*Y\
+	LD	(HL),00DH	;6
+	LD	(05C5BH),HL	;"[\
+	INC	HL	;#
+	LD	(HL),080H	;6Ä
+	INC	HL	;#
+	LD	(05C61H),HL	;"a\
+	LD	HL,(05C61H)	;*a\
+	LD	(05C63H),HL	;"c\
+	LD	HL,(05C63H)	;*c\
+	LD	(05C65H),HL	;"e\
+	PUSH	HL	;Â
+	LD	HL,05C92H	;!í\
+	LD	(05C68H),HL	;"h\
+	POP	HL	;·
+	RET	;…
+	LD	DE,(05C59H)	;Ì[Y\
+	JP	019E5H	;√Â
+	INC	HL	;#
+	LD	A,(HL)	;~
+	AND	A	;ß
+	RET	Z	;»
+	CP	C	;π
+	INC	HL	;#
+	JR	NZ,016DBH	; ¯
+	SCF	;7
+	RET	;…
+	CALL	0171EH	;Õ
+	CALL	01701H	;Õ
+	LD	BC,00000H	;
+	LD	DE,0A3E2H	;‚£
+	EX	DE,HL	;Î
+	ADD	HL,DE
+	JR	C,016FCH	;8
+	LD	BC,015D4H	;‘
+	ADD	HL,BC	;
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	EX	DE,HL	;Î
+	LD	(HL),C	;q
+	INC	HL	;#
+	LD	(HL),B	;p
+	RET	;…
+	PUSH	HL	;Â
+	LD	HL,(05C4FH)	;*O\
+	ADD	HL,BC	;
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	C,(HL)	;N
+	EX	DE,HL	;Î
+	LD	HL,01716H	;!
+	CALL	016DCH	;Õ‹
+	LD	C,(HL)	;N
+	LD	B,000H
+	ADD	HL,BC	;
+	JP	(HL)	;È
+	LD	C,E	;K
+	DEC	B
+	LD	D,E	;S
+	INC	BC
+	LD	D,B	;P
+	LD	BC,0C9E1H	;·…
+	CALL	01E94H	;Õî
+	CP	010H	;˛
+	JR	C,01727H	;8
+	RST	8	;œ
+	RLA
+	ADD	A,003H	;∆
+	RLCA
+	LD	HL,05C10H	;!\
+	LD	C,A	;O
+	LD	B,000H
+	ADD	HL,BC	;
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	DEC	HL	;+
+	RET	;…
+	RST	28H	;Ô
+	LD	BC,0CD38H	;8Õ
+	LD	E,017H	;
+	LD	A,B	;x
+	OR	C	;±
+	JR	Z,01756H	;(
+	EX	DE,HL	;Î
+	LD	HL,(05C4FH)	;*O\
+	ADD	HL,BC	;
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	A,(HL)	;~
+	EX	DE,HL	;Î
+	CP	04BH	;˛K
+	JR	Z,01756H	;(
+	CP	053H	;˛S
+	JR	Z,01756H	;(
+	CP	050H	;˛P
+	JR	NZ,01725H	; œ
+	CALL	0175DH	;Õ]
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	RET	;…
+	PUSH	HL	;Â
+	CALL	02BF1H	;ÕÒ+
+	LD	A,B	;x
+	OR	C	;±
+	JR	NZ,01767H	; 
+	RST	8	;œ
+	LD	C,0C5H	;≈
+	LD	A,(DE)	;
+	AND	0DFH	;Êﬂ
+	LD	C,A	;O
+	LD	HL,0177AH	;!z
+	CALL	016DCH	;Õ‹
+	JR	NC,01765H	;0Ò
+	LD	C,(HL)	;N
+	LD	B,000H
+	ADD	HL,BC	;
+	POP	BC	;¡
+	JP	(HL)	;È
+	LD	C,E	;K
+	LD	B,053H	;S
+	EX	AF,AF"
+	LD	D,B	;P
+	LD	A,(BC)
+	NOP
+	LD	E,001H
+	JR	0178BH
+	LD	E,006H
+	JR	0178BH
+	LD	E,010H
+	DEC	BC	;
+	LD	A,B	;x
+	OR	C	;±
+	JR	NZ,01765H	; ’
+	LD	D,A	;W
+	POP	HL	;·
+	RET	;…
+	JR	01725H	;ê
+	LD	(05C3FH),SP	;Ìs?\
+	LD	(IY+002H),010H	;˝6
+	CALL	00DAFH	;ÕØ
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,0FDH	;∆˝
+	LD	B,(HL)	;F
+	LD	SP,044CDH	;1ÕD
+	LD	C,0FDH	;˝
+	RLC	D	;À
+	ADD	A,(HL)	;Ü
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,01778H	;0∆
+	LD	HL,(05C49H)	;*I\
+	LD	DE,(05C6CH)	;Ì[l\
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	ADD	HL,DE	;
+	JR	C,017E1H	;8"
+	PUSH	DE	;’
+	CALL	0196EH	;Õn
+	LD	DE,002C0H	;¿
+	EX	DE,HL	;Î
+	SBC	HL,DE	;ÌR
+	EX	(SP),HL	;„
+	CALL	0196EH	;Õn
+	POP	BC	;¡
+	PUSH	BC	;≈
+	CALL	019B8H	;Õ∏
+	POP	BC	;¡
+	ADD	HL,BC
+	JR	C,017E4H	;8
+	EX	DE,HL	;Î
+	LD	D,(HL)	;V
+	INC	HL	;#
+	LD	E,(HL)	;^
+	DEC	HL	;+
+	LD	(05C6CH),DE	;ÌSl\
+	JR	017CEH	;Ì
+	LD	(05C6CH),HL	;"l\
+	LD	HL,(05C6CH)	;*l\
+	CALL	0196EH	;Õn
+	JR	Z,017EDH	;(
+	EX	DE,HL	;Î
+	CALL	01833H	;Õ3
+	DB	253	;˝
+	RLC	D	;À
+	AND	(HL)	;¶
+	RET	;…
+	LD	A,003H	;>
+	JR	017FBH	;
+	LD	A,002H	;>
+	LD	(IY+002H),000H	;˝6
+	CALL	02530H	;Õ0%
+	CALL	NZ,01601H	;ƒ
+	RST	18H	;ﬂ
+	CALL	02070H	;Õp 
+	JR	C,0181FH	;8
+	RST	18H	;ﬂ
+	CP	03BH	;˛;
+	JR	Z,01814H	;(
+	CP	02CH	;˛,
+	JR	NZ,0181AH	; 
+	RST	20H	;Á
+	CALL	01C82H	;ÕÇ
+	JR	01822H	;
+	CALL	01CE6H	;ÕÊ
+	JR	01822H	;
+	CALL	01CDEH	;Õﬁ
+	CALL	01BEEH	;ÕÓ
+	CALL	01E99H	;Õô
+	LD	A,B	;x
+	AND	03FH	;Ê?
+	LD	H,A	;g
+	LD	L,C	;i
+	LD	(05C49H),HL	;"I\
+	CALL	0196EH	;Õn
+	LD	E,001H	;
+	CALL	01855H	;ÕU
+	RST	10H	;◊
+	DB	253	;˝
+	RLC	D	;À
+	LD	H,(HL)	;f
+	JR	Z,01835H	;(ˆ
+	LD	A,(05C6BH)	;:k\
+	SUB	(IY+04FH)	;˝ñO
+	JR	NZ,01835H	; Ó
+	XOR	E	;´
+	RET	Z	;»
+	PUSH	HL	;Â
+	PUSH	DE	;’
+	LD	HL,05C6CH	;!l\
+	CALL	0190FH	;Õ
+	POP	DE	;—
+	POP	HL	;·
+	JR	01835H	;‡
+	LD	BC,(05C49H)	;ÌKI\
+	CALL	01980H	;ÕÄ
+	LD	D,03EH	;>
+	JR	Z,01865H	;(
+	LD	DE,00000H	;
+	RL	E	;À
+	LD	(IY+02DH),E	;˝s-
+	LD	A,(HL)	;~
+	CP	040H	;˛@
+	POP	BC	;¡
+	RET	NC	;–
+	PUSH	BC	;≈
+	CALL	01A28H	;Õ(
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	DB	253	;˝
+	RLC	C	;À
+	ADD	A,(HL)	;Ü
+	LD	A,D	;z
+	AND	A	;ß
+	JR	Z,01881H	;(
+	RST	10H	;◊
+	DB	253	;˝
+	RLC	C	;À
+	ADD	A,0D5H	;∆’
+	EX	DE,HL	;Î
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,0181DH	;0ñ
+	LD	HL,05C3BH	;!;\
+	RES	2,(HL)	;Àñ
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	JR	Z,01894H	;(
+	SET	2,(HL)	;À÷
+	LD	HL,(05C5FH)	;*_\
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	JR	NZ,018A1H	; 
+	LD	A,03FH	;>?
+	CALL	018C1H	;Õ¡
+	CALL	018E1H	;Õ·
+	EX	DE,HL	;Î
+	LD	A,(HL)	;~
+	CALL	018B6H	;Õ∂
+	INC	HL	;#
+	CP	00DH	;˛
+	JR	Z,018B4H	;(
+	EX	DE,HL	;Î
+	CALL	01937H	;Õ7
+	JR	01894H	;‡
+	POP	DE	;—
+	RET	;…
+	CP	00EH	;˛
+	RET	NZ	;¿
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	A,(HL)	;~
+	RET	;…
+	EXX	;Ÿ
+	LD	HL,(05C8FH)	;*è\
+	PUSH	HL	;Â
+	RES	7,H	;Àº
+	SET	7,L	;À˝
+	LD	(05C8FH),HL	;"è\
+	LD	HL,05C91H	;!ë\
+	LD	D,(HL)	;V
+	PUSH	DE	;’
+	LD	(HL),000H	;6
+	CALL	009F4H	;ÕÙ
+	POP	HL	;·
+	LD	(IY+057H),H	;˝tW
+	POP	HL	;·
+	LD	(05C8FH),HL	;"è\
+	EXX	;Ÿ
+	RET	;…
+	LD	HL,(05C5BH)	;*[\
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	RET	NZ	;¿
+	LD	A,(05C41H)	;:A\
+	RLC	A	;À
+	JR	Z,018F3H	;(
+	ADD	A,043H	;∆C
+	JR	01909H	;
+	LD	HL,05C3BH	;!;\
+	RES	3,(HL)	;Àû
+	LD	A,04BH	;>K
+	BIT	2,(HL)	;ÀV
+	JR	Z,01909H	;(
+	SET	3,(HL)	;Àﬁ
+	INC	A	;<
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,01963H	;0^
+	JR	Z,01909H	;(
+	LD	A,043H	;>C
+	PUSH	DE	;’
+	CALL	018C1H	;Õ¡
+	POP	DE	;—
+	RET	;…
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	PUSH	HL	;Â
+	EX	DE,HL	;Î
+	INC	HL	;#
+	CALL	0196EH	;Õn
+	CALL	01695H	;Õï
+	POP	HL	;·
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	RET	NZ	;¿
+	LD	(HL),D	;r
+	DEC	HL	;+
+	LD	(HL),E	;s
+	RET	;…
+	LD	A,E	;{
+	AND	A	;ß
+	RET	M	;¯
+	JR	01937H	;
+	XOR	A	;Ø
+	ADD	HL,BC	;
+	INC	A	;<
+	JR	C,0192BH	;8¸
+	SBC	HL,BC	;ÌB
+	DEC	A	;=
+	JR	Z,01925H	;(Ò
+	JP	015EFH	;√Ô
+	CALL	02D1BH	;Õ-
+	JR	NC,0196CH	;00
+	CP	021H	;˛!
+	JR	C,0196CH	;8,
+	DB	253	;˝
+	RLC	C	;À
+	SUB	(HL)	;ñ
+	CP	0CBH	;˛À
+	JR	Z,0196CH	;($
+	CP	03AH	;˛:
+	JR	NZ,0195AH	; 
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	L,(HL)	;n
+	JR	NZ,01968H	; 
+	DB	253	;˝
+	DB	203	;À
+	JR	NC,019ACH	;0V
+	JR	Z,0196CH	;(
+	JR	01968H	;
+	CP	022H	;˛"
+	JR	NZ,01968H	; 
+	PUSH	AF	;ı
+	LD	A,(05C6AH)	;:j\
+	XOR	004H	;Ó
+	LD	(05C6AH),A	;2j\
+	POP	AF	;Ò
+	DB	253	;˝
+	RLC	C	;À
+	SUB	0D7H	;÷◊
+	RET	;…
+	PUSH	HL	;Â
+	LD	HL,(05C53H)	;*S\
+	LD	D,H	;T
+	LD	E,L	;]
+	POP	BC	;¡
+	CALL	01980H	;ÕÄ
+	RET	NC	;–
+	PUSH	BC	;≈
+	CALL	019B8H	;Õ∏
+	EX	DE,HL	;Î
+	JR	01974H	;Ù
+	LD	A,(HL)	;~
+	CP	B	;∏
+	RET	NZ	;¿
+	INC	HL	;#
+	LD	A,(HL)	;~
+	DEC	HL	;+
+	CP	C	;π
+	RET	;…
+	INC	HL	;#
+	INC	HL	;#
+	INC	HL	;#
+	LD	(05C5DH),HL	;"]\
+	LD	C,000H
+	DEC	D	;
+	RET	Z	;»
+	RST	20H	;Á
+	CP	E	;ª
+	JR	NZ,0199AH	; 
+	AND	A	;ß
+	RET	;…
+	INC	HL	;#
+	LD	A,(HL)	;~
+	CALL	018B6H	;Õ∂
+	LD	(05C5DH),HL	;"]\
+	CP	022H	;˛"
+	JR	NZ,019A5H	; 
+	DEC	C	;
+	CP	03AH	;˛:
+	JR	Z,019ADH	;(
+	CP	0CBH	;˛À
+	JR	NZ,019B1H	; 
+	BIT	0,C	;ÀA
+	JR	Z,01990H	;(ﬂ
+	CP	00DH	;˛
+	JR	NZ,01998H	; „
+	DEC	D	;
+	SCF	;7
+	RET	;…
+	PUSH	HL	;Â
+	LD	A,(HL)	;~
+	CP	040H	;˛@
+	JR	C,019D5H	;8
+	BIT	5,A	;Ào
+	JR	Z,019D6H	;(
+	ADD	A,A	;á
+	JP	M,019C7H	;˙«
+	CCF	;?
+	LD	BC,00005H	;
+	JR	NC,019CEH	;0
+	LD	C,012H
+	RLA	;
+	INC	HL	;#
+	LD	A,(HL)	;~
+	JR	NC,019CEH	;0˚
+	JR	019DBH	;
+	INC	HL	;#
+	INC	HL	;#
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	INC	HL	;#
+	ADD	HL,BC	;
+	POP	DE	;—
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	LD	B,H	;D
+	LD	C,L	;M
+	ADD	HL,DE	;
+	EX	DE,HL	;Î
+	RET	;…
+	CALL	019DDH	;Õ›
+	PUSH	BC	;≈
+	LD	A,B	;x
+	CPL	;/
+	LD	B,A	;G
+	LD	A,C	;y
+	CPL	;/
+	LD	C,A	;O
+	INC	BC	;
+	CALL	01664H	;Õd
+	EX	DE,HL	;Î
+	POP	HL	;·
+	ADD	HL,DE	;
+	PUSH	DE	;’
+	LDIR	;Ì∞
+	POP	HL	;·
+	RET	;…
+	LD	HL,(05C59H)	;*Y\
+	DEC	HL	;+
+	LD	(05C5DH),HL	;"]\
+	RST	20H	;Á
+	LD	HL,05C92H	;!í\
+	LD	(05C65H),HL	;"e\
+	CALL	02D3BH	;Õ;-
+	CALL	02DA2H	;Õ¢-
+	JR	C,01A15H	;8
+	LD	HL,0D8F0H	;!ÿ
+	ADD	HL,BC	;
+	JP	C,01C8AH	;⁄ä
+	JP	016C5H	;√≈
+	PUSH	DE	;’
+	PUSH	HL	;Â
+	XOR	A	;Ø
+	BIT	7,B	;Àx
+	JR	NZ,01A42H	;  
+	LD	H,B	;`
+	LD	L,C	;i
+	LD	E,0FFH	;ˇ
+	JR	01A30H	;
+	PUSH	DE	;’
+	LD	D,(HL)	;V
+	INC	HL	;#
+	LD	E,(HL)	;^
+	PUSH	HL	;Â
+	EX	DE,HL	;Î
+	LD	E,020H	; 
+	LD	BC,0FC18H	;¸
+	CALL	0192AH	;Õ*
+	LD	BC,0FF9CH	;úˇ
+	CALL	0192AH	;Õ*
+	LD	C,0F6H	;ˆ
+	CALL	0192AH	;Õ*
+	LD	A,L	;}
+	CALL	015EFH	;ÕÔ
+	POP	HL	;·
+	POP	DE	;—
+	RET	;…
+	OR	C	;±
+	RES	7,H	;Àº
+	CP	A	;ø
+	CALL	NZ,0B4AFH	;ƒØ¥
+	SUB	E	;ì
+	SUB	C	;ë
+	SUB	D	;í
+	SUB	L	;ï
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	SBC	A,B	;ò
+	LD	A,A	;
+	ADD	A,C	;Å
+	LD	L,06CH	;.l
+	LD	L,(HL)	;n
+	LD	(HL),B	;p
+	LD	C,B	;H
+	SUB	H	;î
+	LD	D,(HL)	;V
+	CCF	;?
+	LD	B,C	;A
+	DEC	HL	;+
+	RLA	;
+	RRA	;
+	SCF	;7
+	LD	(HL),A	;w
+	LD	B,H	;D
+	RRCA	;
+	LD	E,C	;Y
+	DEC	HL	;+
+	LD	B,E	;C
+	DEC	L	;-
+	LD	D,C	;Q
+	LD	A,(0426DH)	;:mB
+	DEC	C	;
+	LD	C,C	;I
+	LD	E,H	;\
+	LD	B,H	;D
+	DEC	D
+	LD	E,L	;]
+	LD	BC,0023DH	;=
+	LD	B,000H	;
+	LD	H,A	;g
+	LD	E,006H	;
+	RLC	L	;À
+	RET	P	;
+	INC	E
+	LD	B,000H	;
+	DB	237	;Ì
+	LD	E,000H	;
+	XOR	01CH	;Ó
+	NOP
+	INC	HL	;#
+	RRA	;
+	INC	B
+	DEC	A	;=
+	LD	B,0CCH	;Ã
+	LD	B,005H
+	INC	BC
+	DEC	E
+	INC	B	;
+	NOP
+	XOR	E	;´
+	DEC	E	;
+	DEC	B
+	CALL	0051FH	;Õ
+	ADC	A,C	;â
+	JR	NZ,01AA8H	; 
+	LD	(BC),A
+	INC	L	;,
+	DEC	B
+	OR	D	;≤
+	DEC	DE	;
+	NOP
+	OR	A	;∑
+	LD	DE,0A103H	;°
+	LD	E,005H	;
+	LD	SP,HL	;˘
+	RLA
+	EX	AF,AF"	;
+	NOP
+	ADD	A,B	;Ä
+	LD	E,003H	;
+	LD	C,A	;O
+	LD	E,000H	;
+	LD	E,A	;_
+	LD	E,003H	;
+	XOR	H	;¨
+	LD	E,000H	;
+	LD	L,E	;k
+	DEC	C
+	ADD	HL,BC	;
+	NOP	;
+	CALL	C,00622H	;‹"
+	NOP
+	LD	A,(0051FH)	;:
+	DB	237	;Ì
+	DEC	E	;
+	DEC	B
+	DAA	;'
+	LD	E,003H	;
+	LD	B,D	;B
+	LD	E,009H
+	DEC	B	;
+	ADD	A,D	;Ç
+	INC	HL	;#
+	NOP
+	XOR	H	;¨
+	LD	C,005H	;
+	RET	;…
+	RRA	;
+	DEC	B
+	PUSH	AF	;ı
+	RLA
+	DEC	BC
+	DEC	BC
+	DEC	BC
+	DEC	BC
+	EX	AF,AF"	;
+	NOP
+	RET	M	;¯
+	INC	BC
+	ADD	HL,BC	;
+	DEC	B	;
+	JR	NZ,01B0EH	; #
+	RLCA
+	RLCA
+	RLCA
+	RLCA
+	RLCA
+	RLCA
+	EX	AF,AF"	;
+	NOP
+	LD	A,D	;z
+	LD	E,006H
+	NOP	;
+	SUB	H	;î
+	LD	(06005H),HL	;"`
+	RRA	;
+	LD	B,02CH	;,
+	LD	A,(BC)	;
+	NOP
+	LD	(HL),017H	;6
+	LD	B,000H	;
+	PUSH	HL	;Â
+	LD	D,00AH
+	NOP
+	SUB	E	;ì
+	RLA	;
+	LD	A,(BC)
+	INC	L	;,
+	LD	A,(BC)	;
+	NOP
+	SUB	E	;ì
+	RLA
+	LD	A,(BC)	;
+	NOP
+	SUB	E	;ì
+	RLA	;
+	NOP
+	SUB	E	;ì
+	RLA	;
+	DB	253	;˝
+	RLC	C	;À
+	CP	(HL)	;æ
+	CALL	019FBH	;Õ˚
+	XOR	A	;Ø
+	LD	(05C47H),A	;2G\
+	DEC	A	;=
+	LD	(05C3AH),A	;2:\
+	JR	01B29H	;
+	RST	20H	;Á
+	CALL	016BFH	;Õø
+	INC	(IY+00DH)	;˝4
+	JP	M,01C8AH	;˙ä
+	RST	18H	;ﬂ
+	LD	B,000H	;
+	CP	00DH	;˛
+	JR	Z,01BB3H	;(z
+	CP	03AH	;˛:
+	JR	Z,01B28H	;(Î
+	LD	HL,01B76H	;!v
+	PUSH	HL	;Â
+	LD	C,A	;O
+	RST	20H	;Á
+	LD	A,C	;y
+	SUB	0CEH	;÷Œ
+	JP	C,01C8AH	;⁄ä
+	LD	C,A	;O
+	LD	HL,01A48H	;!H
+	ADD	HL,BC
+	LD	C,(HL)	;N
+	ADD	HL,BC
+	JR	01B55H	;
+	LD	HL,(05C74H)	;*t\
+	LD	A,(HL)	;~
+	INC	HL	;#
+	LD	(05C74H),HL	;"t\
+	LD	BC,01B52H	;R
+	PUSH	BC	;≈
+	LD	C,A	;O
+	CP	020H	;˛ 
+	JR	NC,01B6FH	;0
+	LD	HL,01C01H	;!
+	LD	B,000H
+	ADD	HL,BC
+	LD	C,(HL)	;N
+	ADD	HL,BC	;
+	PUSH	HL	;Â
+	RST	18H	;ﬂ
+	DEC	B	;
+	RET	;…
+	RST	18H	;ﬂ
+	CP	C	;π
+	JP	NZ,01C8AH	;¬ä
+	RST	20H	;Á
+	RET	;…
+	CALL	01F54H	;ÕT
+	JR	C,01B7DH	;8
+	RST	8	;œ
+	INC	D	;
+	DB	253	;˝
+	RRC	D	;À
+	LD	A,(HL)	;~
+	JR	NZ,01BF4H	; q
+	LD	HL,(05C42H)	;*B\
+	BIT	7,H	;À|
+	JR	Z,01B9EH	;(
+	LD	HL,0FFFEH	;!˛ˇ
+	LD	(05C45H),HL	;"E\
+	LD	HL,(05C61H)	;*a\
+	DEC	HL	;+
+	LD	DE,(05C59H)	;Ì[Y\
+	DEC	DE	;
+	LD	A,(05C44H)	;:D\
+	JR	01BD1H	;3
+	CALL	0196EH	;Õn
+	LD	A,(05C44H)	;:D\
+	JR	Z,01BBFH	;(
+	AND	A	;ß
+	JR	NZ,01BECH	; C
+	LD	B,A	;G
+	LD	A,(HL)	;~
+	AND	0C0H	;Ê¿
+	LD	A,B	;x
+	JR	Z,01BBFH	;(
+	RST	8	;œ
+	RST	38H	;ˇ
+	POP	BC	;¡
+	CALL	02530H	;Õ0%
+	RET	Z	;»
+	LD	HL,(05C55H)	;*U\
+	LD	A,0C0H	;>¿
+	AND	(HL)	;¶
+	RET	NZ	;¿
+	XOR	A	;Ø
+	CP	001H	;˛
+	ADC	A,000H	;Œ
+	LD	D,(HL)	;V
+	INC	HL	;#
+	LD	E,(HL)	;^
+	LD	(05C45H),DE	;ÌSE\
+	INC	HL	;#
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	EX	DE,HL	;Î
+	ADD	HL,DE	;
+	INC	HL	;#
+	LD	(05C55H),HL	;"U\
+	EX	DE,HL	;Î
+	LD	(05C5DH),HL	;"]\
+	LD	D,A	;W
+	LD	E,000H	;
+	LD	(IY+00AH),0FFH	;˝6ˇ
+	DEC	D	;
+	LD	(IY+00DH),D	;˝r
+	JP	Z,01B28H	; (
+	INC	D	;
+	CALL	0198BH	;Õã
+	JR	Z,01BF4H	;(
+	RST	8	;œ
+	LD	D,0CDH	;Õ
+	JR	NC,01C16H	;0%
+	RET	NZ	;¿
+	POP	BC	;¡
+	POP	BC	;¡
+	RST	18H	;ﬂ
+	CP	00DH	;˛
+	JR	Z,01BB3H	;(∫
+	CP	03AH	;˛:
+	JP	Z,01B28H	; (
+	JP	01C8AH	;√ä
+	RRCA	;
+	DEC	E
+	LD	C,E	;K
+	ADD	HL,BC
+	LD	H,A	;g
+	DEC	BC	;
+	LD	A,E	;{
+	ADC	A,(HL)	;é
+	LD	(HL),C	;q
+	OR	H	;¥
+	ADD	A,C	;Å
+	RST	8	;œ
+	CALL	01CDEH	;Õﬁ
+	CP	A	;ø
+	POP	BC	;¡
+	CALL	Z,01BEEH	;ÃÓ
+	EX	DE,HL	;Î
+	LD	HL,(05C74H)	;*t\
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	EX	DE,HL	;Î
+	PUSH	BC	;≈
+	RET	;…
+	CALL	028B2H	;Õ≤(
+	LD	(IY+037H),000H	;˝67
+	JR	NC,01C30H	;0
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	ADC	A,020H	;Œ 
+	JR	01BFEH	;œ
+	LD	BC,096CCH	;Ãñ
+	ADD	HL,HL	;)
+	DB	253	;˝
+	RLC	C	;À
+	HALT	;v
+	JR	NZ,01C46H	; 
+	XOR	A	;Ø
+	CALL	02530H	;Õ0%
+	CALL	NZ,02BF1H	;ƒÒ+
+	LD	HL,05C71H	;!q\
+	OR	(HL)	;∂
+	LD	(HL),A	;w
+	EX	DE,HL	;Î
+	LD	(05C72H),BC	;ÌCr\
+	LD	(05C4DH),HL	;"M\
+	RET	;…
+	POP	BC	;¡
+	CALL	01C56H	;ÕV
+	CALL	01BEEH	;ÕÓ
+	RET	;…
+	LD	A,(05C3BH)	;:;\
+	PUSH	AF	;ı
+	CALL	024FBH	;Õ˚$
+	POP	AF	;Ò
+	LD	D,(IY+001H)	;˝V
+	XOR	D	;™
+	AND	040H	;Ê@
+	JR	NZ,01C8AH	; $
+	BIT	7,D	;Àz
+	JP	NZ,02AFFH	;¬ˇ*
+	RET	;…
+	CALL	028B2H	;Õ≤(
+	PUSH	AF	;ı
+	LD	A,C	;y
+	OR	09FH	;ˆü
+	INC	A	;<
+	JR	NZ,01C8AH	; 
+	POP	AF	;Ò
+	JR	01C22H	;©
+	RST	20H	;Á
+	CALL	01C82H	;ÕÇ
+	CP	02CH	;˛,
+	JR	NZ,01C8AH	; 
+	RST	20H	;Á
+	CALL	024FBH	;Õ˚$
+	DB	253	;˝
+	RLC	C	;À
+	HALT	;v
+	RET	NZ	;¿
+	RST	8	;œ
+	DEC	BC	;
+	CALL	024FBH	;Õ˚$
+	DB	253	;˝
+	RLC	C	;À
+	HALT	;v
+	RET	Z	;»
+	JR	01C8AH	;Ù
+	DB	253	;˝
+	RLC	C	;À
+	LD	A,(HL)	;~
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,(HL)	;Ü
+	CALL	NZ,00D4DH	;ƒM
+	POP	AF	;Ò
+	LD	A,(05C74H)	;:t\
+	SUB	013H	;÷
+	CALL	021FCH	;Õ¸!
+	CALL	01BEEH	;ÕÓ
+	LD	HL,(05C8FH)	;*è\
+	LD	(05C8DH),HL	;"ç\
+	LD	HL,05C91H	;!ë\
+	LD	A,(HL)	;~
+	RLCA	;
+	XOR	(HL)	;Æ
+	AND	0AAH	;Ê™
+	XOR	(HL)	;Æ
+	LD	(HL),A	;w
+	RET	;…
+	CALL	02530H	;Õ0%
+	JR	Z,01CD6H	;(
+	DB	253	;˝
+	RLC	D	;À
+	ADD	A,(HL)	;Ü
+	CALL	00D4DH	;ÕM
+	LD	HL,05C90H	;!ê\
+	LD	A,(HL)	;~
+	OR	0F8H	;ˆ¯
+	LD	(HL),A	;w
+	DB	253	;˝
+	BIT	2,A	;ÀW
+	OR	(HL)	;∂
+	RST	18H	;ﬂ
+	CALL	021E2H	;Õ‚!
+	JR	01C7AH	;ü
+	JP	00605H	;√
+	CP	00DH	;˛
+	JR	Z,01CE6H	;(
+	CP	03AH	;˛:
+	JR	NZ,01C82H	; ú
+	CALL	02530H	;Õ0%
+	RET	Z	;»
+	RST	28H	;Ô
+	AND	B	;†
+	JR	C,01CB7H	;8…
+	RST	8	;œ
+	EX	AF,AF"	;
+	POP	BC	;¡
+	CALL	02530H	;Õ0%
+	JR	Z,01D00H	;(
+	RST	28H	;Ô
+	LD	(BC),A	;
+	JR	C,01CE5H	;8Î
+	CALL	034E9H	;ÕÈ4
+	JP	C,01BB3H	;⁄≥
+	JP	01B29H	;√)
+	CP	0CDH	;˛Õ
+	JR	NZ,01D10H	; 
+	RST	20H	;Á
+	CALL	01C82H	;ÕÇ
+	CALL	01BEEH	;ÕÓ
+	JR	01D16H	;
+	CALL	01BEEH	;ÕÓ
+	RST	28H	;Ô
+	AND	C	;°
+	JR	C,01D06H	;8Ô
+	RET	NZ	;¿
+	LD	(BC),A	;
+	LD	BC,001E0H	;‡
+	JR	C,01CEBH	;8Õ
+	RST	38H	;ˇ
+	LD	HL,(06822H)	;*"h
+	LD	E,H	;\
+	DEC	HL	;+
+	LD	A,(HL)	;~
+	SET	7,(HL)	;À˛
+	LD	BC,00006H	;
+	ADD	HL,BC	;
+	RLCA
+	JR	C,01D34H	;8
+	LD	C,00DH	;
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	PUSH	HL	;Â
+	RST	28H	;Ô
+	LD	(BC),A	;
+	LD	(BC),A	;
+	JR	C,01D1BH	;8·
+	EX	DE,HL	;Î
+	LD	C,00AH	;
+	LDIR	;Ì∞
+	LD	HL,(05C45H)	;*E\
+	EX	DE,HL	;Î
+	LD	(HL),E	;s
+	INC	HL	;#
+	LD	(HL),D	;r
+	LD	D,(IY+00DH)	;˝V
+	INC	D	;
+	INC	HL	;#
+	LD	(HL),D	;r
+	CALL	01DDAH	;Õ⁄
+	RET	NC	;–
+	LD	B,(IY+038H)	;˝F8
+	LD	HL,(05C45H)	;*E\
+	LD	(05C42H),HL	;"B\
+	LD	A,(05C47H)	;:G\
+	NEG	;ÌD
+	LD	D,A	;W
+	LD	HL,(05C5DH)	;*]\
+	LD	E,0F3H	;Û
+	PUSH	BC	;≈
+	LD	BC,(05C55H)	;ÌKU\
+	CALL	01D86H	;ÕÜ
+	LD	(05C55H),BC	;ÌCU\
+	POP	BC	;¡
+	JR	C,01D84H	;8
+	RST	20H	;Á
+	OR	020H	;ˆ 
+	CP	B	;∏
+	JR	Z,01D7CH	;(
+	RST	20H	;Á
+	JR	01D64H	;Ë
+	RST	20H	;Á
+	LD	A,001H	;>
+	SUB	D	;í
+	LD	(05C44H),A	;2D\
+	RET	;…
+	RST	8	;œ
+	LD	DE,0FE7EH	;~˛
+	LD	A,(01828H)	;:(
+	INC	HL	;#
+	LD	A,(HL)	;~
+	AND	0C0H	;Ê¿
+	SCF	;7
+	RET	NZ	;¿
+	LD	B,(HL)	;F
+	INC	HL	;#
+	LD	C,(HL)	;N
+	LD	(05C42H),BC	;ÌCB\
+	INC	HL	;#
+	LD	C,(HL)	;N
+	INC	HL	;#
+	LD	B,(HL)	;F
+	PUSH	HL	;Â
+	ADD	HL,BC	;
+	LD	B,H	;D
+	LD	C,L	;M
+	POP	HL	;·
+	LD	D,000H	;
+	PUSH	BC	;≈
+	CALL	0198BH	;Õã
+	POP	BC	;¡
+	RET	NC	;–
+	JR	01D8BH	;‡
+	DB	253	;˝
+	DB	203	;À
+	SCF	;7
+	LD	C,(HL)	;N
+	JP	NZ,01C2EH	;¬.
+	LD	HL,(05C4DH)	;*M\
+	BIT	7,(HL)	;À~
+	JR	Z,01DD8H	;(
+	INC	HL	;#
+	LD	(05C68H),HL	;"h\
+	RST	28H	;Ô
+	RET	P0	;‡
+	JP	PO,0C00FH	;‚¿
+	LD	(BC),A	;
+	JR	C,01D92H	;8Õ
+	JP	C,0D81DH	;⁄ÿ
+	LD	HL,(05C68H)	;*h\
+	LD	DE,0000FH	;
+	ADD	HL,DE	;
+	LD	E,(HL)	;^
+	INC	HL	;#
+	LD	D,(HL)	;V
+	INC	HL	;#
+	LD	H,(HL)	;f
+	EX	DE,HL	;Î
+	JP	01E73H	;√s
+	RST	8	;œ
+	NOP	;
+	RST	28H	;Ô
+	POP	HL	;·
+	RET	P0	;‡
+	JP	PO,00036H	;‚6
+	LD	(BC),A
+	LD	BC,03703H	;7
+	NOP	;
+	INC	B	;
+	JR	C,01D8FH	;8ß
+	RET	;…
+	JR	C,01E22H	;87
+	RET	;…
+	RST	20H	;Á
+	CALL	01C1FH	;Õ
+	CALL	02530H	;Õ0%
+	JR	Z,01E1EH	;()
+	RST	18H	;ﬂ
+	LD	(05C5FH),HL	;"_\
+	LD	HL,(05C57H)	;*W\
+	LD	A,(HL)	;~
+	CP	02CH	;˛,
+	JR	Z,01E0AH	;(
+	LD	E,0E4H	;‰
+	CALL	01D86H	;ÕÜ
+	JR	NC,01E0AH	;0
+	RST	8	;œ
+	DEC	C	;
+	CALL	00077H	;Õw
+	CALL	01C56H	;ÕV
+	RST	18H	;ﬂ
+	LD	(05C57H),HL	;"W\
+	LD	HL,(05C5FH)	;*_\
+	LD	(IY+026H),000H	;˝6&
+	CALL	00078H	;Õx
+	RST	18H	;ﬂ
+	CP	02CH	;˛,
+	JR	Z,01DECH	;(…
+	CALL	01BEEH	;ÕÓ
+	RET	;…
+	CALL	02530H	;Õ0%
+	JR	NZ,01E37H	; 
+	CALL	024FBH	;Õ˚$
+	CP	02CH	;˛,
+	CALL	NZ,01BEEH	;ƒÓ
+	RST	20H	;Á
+	JR	01E2CH	;ı
+	LD	A,0E4H	;>‰
+	LD	B,A	;G
+	CPDR	;Ìπ
+	LD	DE,00200H	;
+	JP	0198BH	;√ã
+	CALL	01E99H	;Õô
+	LD	H,B	;`
+	LD	L,C	;i
+	CALL	0196EH	;Õn
+	DEC	HL	;+
+	LD	(05C57H),HL	;"W\
+	RET	;…
+	CALL	01E99H	;Õô
+	LD	A,B	;x
+	OR	C	;±
+	JR	NZ,01E5AH	; 
+	LD	BC,(05C78H)	;ÌKx\
+	LD	(05C76H),BC	;ÌCv\
+	RET	;…
+	LD	HL,(05C6EH)	;*n\
+	LD	D,(IY+036H)	;˝V6
+	JR	01E73H	;
+	CALL	01E99H	;Õô
+	LD	H,B	;`
+	LD	L,C	;i
+	LD	D,000H	;
+	LD	A,H	;|
+	CP	0F0H	;˛
+	JR	NC,01E9FH	;0,
+	LD	(05C42H),HL	;"B\
+	LD	(IY+00AH),D	;˝r
+	RET	;…
+	CALL	01E85H	;ÕÖ
+	OUT	(C),A	;Ìy
+	RET	;…
+	CALL	01E85H	;ÕÖ
+	LD	(BC),A	;
+	RET	;…
+	CALL	02DD5H	;Õ’-
+	JR	C,01E9FH	;8
+	JR	Z,01E8EH	;(
+	NEG	;ÌD
+	PUSH	AF	;ı
+	CALL	01E99H	;Õô
+	POP	AF	;Ò
+	RET	;…
+	CALL	02DD5H	;Õ’-
+	JR	01E9CH	;
+	CALL	02DA2H	;Õ¢-
+	JR	C,01E9FH	;8
+	RET	Z	;»
+	RST	8	;œ
+	LD	A,(BC)	;
+	CALL	01E67H	;Õg
+	LD	BC,00000H	;
+	CALL	01E45H	;ÕE
+	JR	01EAFH	;
+	CALL	01E99H	;Õô
+	LD	A,B	;x
+	OR	C	;±
+	JR	NZ,01EB7H	; 
+	LD	BC,(05CB2H)	;ÌK≤\
+	PUSH	BC	;≈
+	LD	DE,(05C4BH)	;Ì[K\
+	LD	HL,(05C59H)	;*Y\
+	DEC	HL	;+
+	CALL	019E5H	;ÕÂ
+	CALL	00D6BH	;Õk
+	LD	HL,(05C65H)	;*e\
+	LD	DE,00032H	;2
+	ADD	HL,DE	;
+	POP	DE	;—
+	SBC	HL,DE	;ÌR
+	JR	NC,01EDAH	;0
+	LD	HL,(05CB4H)	;*¥\
+	AND	A	;ß
+	SBC	HL,DE	;ÌR
+	JR	NC,01EDCH	;0
+	RST	8	;œ
+	DEC	D	;
+	EX	DE,HL	;Î
+	LD	(05CB2H),HL	;"≤\
+	POP	DE	;—
+	POP	BC	;¡
+	LD	(HL),03EH	;6>
+	DEC	HL	;+
+	LD	SP,HL	;˘
+	PUSH	BC	;≈
+	LD	(05C3DH),SP	;Ìs=\
+	EX	DE,HL	;Î
+	JP	(HL)	;È
+	POP	DE	;—
+	LD	H,(IY+00DH)	;˝f
+	INC	H	;$
+	EX	(SP),HL	;„
+	INC	SP	;3
+	LD	BC,(05C45H)	;ÌKE\
+	PUSH	BC	;≈
+	PUSH	HL	;Â
+	LD	(05C3DH),SP	;Ìs=\
+	PUSH	DE	;’
+	CALL	01E67H	;Õg
+	LD	BC,00014H	;
+	LD	HL,(05C65H)	;*e\
+	ADD	HL,BC
+	JR	C,01F15H	;8
+	EX	DE,HL	;Î
+	LD	HL,00050H	;!P
+	ADD	HL,DE
+	JR	C,01F15H	;8
+	SBC	HL,SP	;Ìr
+	RET	C	;ÿ
+	LD	L,003H	;.
+	JP	00055H	;√U
+	LD	BC,00000H	;
+	CALL	01F05H	;Õ
+	LD	B,H	;D
+	LD	C,L	;M
+	RET	;…
+	POP	BC	;¡
+	POP	HL	;·
+	POP	DE	;—
+	LD	A,D	;z
+	CP	03EH	;˛>
+	JR	Z,01F36H	;(
+	DEC	SP	;;
+	EX	(SP),HL	;„
+	EX	DE,HL	;Î
+	LD	(05C3DH),SP	;Ìs=\
+	PUSH	BC	;≈
+	JP	01E73H	;√s
+	PUSH	DE	;’
+	PUSH	HL	;Â
+	RST	8	;œ
+	LD	B,0CDH	;Õ
+	SBC	A,C	;ô
+	LD	E,076H	;v
+	DEC	BC	;
+	LD	A,B	;x
+	OR	C	;±
+	JR	Z,01F4FH	;(
+	LD	A,B	;x
+	AND	C	;°
+	INC	A	;<
+	JR	NZ,01F49H	; 
+	INC	BC	;
+	DB	253	;˝
+	RLC	C	;À
+	LD	L,(HL)	;n
+	JR	Z,01F3DH	;(Ó
+	DB	253	;˝
+	RLC	C	;À
+	XOR	(HL)	;Æ
+	RET	;…
+	LD	A,07FH	;>
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	RET	C	;ÿ
+	LD	A,0FEH	;>˛
+	IN	A,(0FEH)	;€˛
+	RRA	;
+	RET	;…
+	CALL	02530H	;Õ0%
+	JR	Z,01F6AH	;(
+	LD	A,0CEH	;>Œ
+	JP	01E39H	;√9
+	DB	253	;˝
+	RLC	C	;À
+	OR	0CDH	;ˆÕ
+	ADC	A,L	;ç
+	INC	L	;,
+	JR	NC,01F89H	;0
+	RST	20H	;Á
+	CP	024H	;˛$
+	JR	NZ,01F7DH	; 
+	DB	253	;˝
+	RLC	C	;À
+	OR	(HL)	;∂
+	RST	20H	;Á
+	CP	028H	;˛(
+	JR	NZ,01FBDH	; <
+	RST	20H	;Á
+	CP	029H	;˛)
+	JR	Z,01FA6H	;( 
+	CALL	02C8DH	;Õç,
+	JP	NC,01C8AH	;“ä
+	EX	DE,HL	;Î
+	RST	20H	;Á
+	CP	024H	;˛$
+	JR	NZ,01F94H	; 
+	EX	DE,HL	;Î
+	RST	20H	;Á
+	EX	DE,HL	;Î
+	LD	BC,00006H	;
+	CALL	01655H	;ÕU
+	INC	HL	;#
+	INC	HL	;#
+	LD	(HL),00EH	;6
+	CP	02CH	;˛,
+	JR	NZ,01FA6H	; 
+	RST	20H	;Á
+	JR	01F86H	;‡
+	CP	029H	;˛)
+	JR	NZ,01FBDH	; 
+	RST	20H	;Á
+	CP	03DH	;˛=
+	JR	NZ,01FBDH	; 
+	RST	20H	;Á
+	LD	A,(05C3BH)	;:;\
+	PUSH	AF	;ı
+	CALL	024FBH	;Õ˚$
+	POP	AF	;Ò
+	XOR	(IY+001H)	;˝Æ
+	AND	040H	;Ê@
+	JP	NZ,01C8AH	;¬ä
+	CALL	01BEEH	;ÕÓ
+	CALL	02530H	;Õ0%
+	POP	HL	;·
+	RET	Z	;»
+	JP	(HL)	;È
+	LD	A,003H	;>
+	JR	01FCFH	;
+	LD	A,002H	;>
+	CALL	02530H	;Õ0%
+	CALL	NZ,01601H	;ƒ
+	CALL	00D4DH	;ÕM
+	CALL	01FDFH	;Õﬂ
+	CALL	01BEEH	;ÕÓ
+	RET	;…
+	RST	18H	;ﬂ
+	CALL	02045H	;ÕE 
+	JR	Z,01FF2H	;(
+	CALL	0204EH	;ÕN 
+	JR	Z,01FE5H	;(˚
+	CALL	01FFCH	;Õ¸
+	CALL	0204EH	;ÕN 
+	JR	Z,01FE5H	;(Û
+	CP	029H	;˛)
+	RET	Z	;»
+	CALL	01FC3H	;Õ√
+	LD	A,00DH	;>
+	RST	10H	;◊
+	RET	;…
+	RST	18H	;ﬂ
+	CP	0ACH	;˛¨
+	DB	32	; 
+	END
